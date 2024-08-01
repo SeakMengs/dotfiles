@@ -172,7 +172,7 @@ read -p "Do you want to reboot now? (y/n, default: y): " reboot_choice
 reboot_choice=${reboot_choice:-y}
 
 if [[ $reboot_choice == "y" || $reboot_choice == "Y" ]]; then
-  sudo reboot
+  reboot
 else
   echo "Please reboot your system later to apply changes."
 fi
