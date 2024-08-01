@@ -5,6 +5,7 @@ USER_HYPR_CONFIG="$HOME/.config/hypr/modules/monitor_mode.conf"
 SYSTEM_MKINITCPIO_CONFIG="/etc/mkinitcpio.conf"
 SYSTEM_NVIDIA_MODPROBE="/etc/modprobe.d/nvidia.conf"
 SYSTEM_BLACKLIST_MODPROBE="/etc/modprobe.d/blacklist.conf"
+NVIDIA_UTILS_CONF="/usr/lib/modprobe.d/nvidia-utils.conf"
 
 # Check for sudo privileges for system-level changes
 check_sudo() {
@@ -53,6 +54,22 @@ update_mkinitcpio_modules() {
   echo "$updated_content" | sudo tee $SYSTEM_MKINITCPIO_CONFIG > /dev/null
 }
 
+# Function to update modprobe configuration
+update_nvidia_utils_modprobe_config() {
+  local mode=$1
+  if [[ -f $NVIDIA_UTILS_CONF ]]; then
+    if [[ $mode == "external" ]]; then
+      if grep -q "#blacklist nouveau" $NVIDIA_UTILS_CONF; then
+        sudo sed -i 's/#blacklist nouveau/blacklist nouveau/' $NVIDIA_UTILS_CONF
+      fi
+    elif [[ $mode == "internal" ]]; then
+      if grep -q "blacklist nouveau" $NVIDIA_UTILS_CONF; then
+        sudo sed -i 's/blacklist nouveau/#blacklist nouveau/' $NVIDIA_UTILS_CONF
+      fi
+    fi
+  fi
+}
+
 external_monitor_mode() {
   echo "Switching to external monitor mode..."
 
@@ -92,6 +109,9 @@ options nouveau modeset=0
 #blacklist nvidia-uvm
 EOL
 
+  # Update modprobe configuration
+  update_nvidia_utils_modprobe_config "external"
+
   echo "Regenerating initramfs..."
   sudo mkinitcpio -P
   echo "External monitor mode activated. Please reboot."
@@ -127,6 +147,10 @@ blacklist nvidia-modeset
 blacklist nvidia-uvm
 EOL
 
+  # Update modprobe configuration
+ update_nvidia_utils_modprobe_config "internal"
+
+
   echo "Regenerating initramfs..."
   sudo mkinitcpio -P
   echo "Internal monitor mode activated. Please reboot."
@@ -139,5 +163,16 @@ elif [[ $1 == "internal" ]]; then
   internal_monitor_mode
 else
   echo "Usage: $0 {external|internal}"
+  exit 1
 fi
 
+# Ask user if they want to reboot
+read -p "Do you want to reboot now? (y/n, default: y): " reboot_choice
+# If no input, default to 'y'
+reboot_choice=${reboot_choice:-y}
+
+if [[ $reboot_choice == "y" || $reboot_choice == "Y" ]]; then
+  sudo reboot
+else
+  echo "Please reboot your system later to apply changes."
+fi
