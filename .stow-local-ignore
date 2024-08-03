@@ -24,3 +24,6 @@ _darcs
 
 # Ignore my custom monitor config
 .config/hypr/modules/monitor_mode.conf
+
+# Personal config like vs code etc
+personal

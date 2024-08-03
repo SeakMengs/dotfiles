@@ -43,3 +43,4 @@ $ stow . -t ~ --adopt
 ## Inspiration and Credits
 
 - [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
+- [rchrdwllm](https://github.com/rchrdwllm/dotfiles)
