@@ -22,7 +22,7 @@ zinit light Aloxaf/fzf-tab
 # Load completions 
 autoload -Uz compinit && compinit
 
-zinit cdreplay -q
+# zinit cdreplay -q
 
 # Keybindings
 bindkey -e
@@ -50,15 +50,12 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 #zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 # Alias
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
 alias monitor_mode="$HOME/.config/scripts/monitor_mode.sh"
 alias syncdot="$HOME/.config/scripts/syncdot.sh"
+alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
 
 # Execute when terminal open
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/pure.omp.json)"

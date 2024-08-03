@@ -7,7 +7,7 @@ This directory contains the dotfiles for my arch linux system
 Ensure you have the following installed on your system (Not necessary mean u need those, these are for me to copy paste if i ever need to fresh install my system)
 
 ```
-pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper btrfs-assistant pipewire pipewire-alsa pipewire-pulse pavucontrol sof-firmware ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd
+pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper btrfs-assistant pipewire pipewire-alsa pipewire-pulse pavucontrol sof-firmware ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd gwenview
 ```
 
 ```
@@ -39,6 +39,7 @@ to adopt change from the dotfiles that already exist in your system, use
 $ stow . -t ~ --adopt
 ```
 
-## Notes
 
-In `.config/hypr/hyprpaper.conf` change `/home/yato/` to `/home/your-username/`
+## Inspiration and Credits
+
+- [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
