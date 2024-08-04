@@ -144,11 +144,10 @@
     "diffEditor.ignoreTrimWhitespace": false,
     // Change Font
     // "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, CaskaydiaCove Nerd Font Mono",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
-    // "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
-    "editor.fontFamily": "JetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "JetBrainsMono Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
     "editor.fontWeight": "normal",
     "editor.fontLigatures": false,
 
@@ -183,7 +182,7 @@
     // },
 
     // apply the font family to the editor
-    "apc.font.family": "Fira Code, Consolas, 'Courier New', monospace",
+    "apc.font.family": "JetBrainsMono Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
     "apc.monospace.font.family": "Geist Mono",
 
     // formatter Prettier
@@ -516,5 +515,6 @@
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "window.menuBarVisibility": "toggle"
 }

@@ -22,13 +22,13 @@ zinit light Aloxaf/fzf-tab
 # Load completions 
 autoload -Uz compinit && compinit
 
-# zinit cdreplay -q
+zinit cdreplay -q
 
 # Keybindings
 bindkey -e
 bindkey '^[[A' history-search-backward # Arrow down
 bindkey '^[[B' history-search-forward # Arrow up
-bindkey '^[w' kill-region
+bindkey '^[w' kill-region # Ctrl + w | clear line
 
 # History
 HISTSIZE=5000
@@ -60,6 +60,7 @@ alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
 # Execute when terminal open
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/pure.omp.json)"
 eval "$(fzf --zsh)"
+eval $(thefuck --alias)
 fastfetch --config examples/8
 
 # Path

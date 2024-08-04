@@ -7,11 +7,11 @@ This directory contains the dotfiles for my arch linux system
 Ensure you have the following installed on your system (Not necessary mean u need those, these are for me to copy paste if i ever need to fresh install my system)
 
 ```
-pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper btrfs-assistant pipewire pipewire-alsa pipewire-pulse pavucontrol sof-firmware ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd gwenview
+$ pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper btrfs-assistant pipewire pipewire-alsa pipewire-pulse pavucontrol sof-firmware ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd gwenview
 ```
 
 ```
-yay -S system76-power pywal-16-colors
+$ yay -S system76-power pywal-16-colors
 ```
 
 ## Installation
