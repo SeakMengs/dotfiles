@@ -1,41 +1,28 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    //"gtk-layer-shell": "false",
-    "height": 40, // Waybar height (to be removed for auto height)
-    // "width": 2560, // Waybar width
-    "spacing": 0, // Gaps between modules (0px) Adjusted in the css
-    "margin-top": 0,
-    //"margin-bottom":-10,
+    "layer": "top",
+    "position": "top", 
     "margin-left": 10,
     "margin-right": 10,
-    // Choose the order of the modules
-    "modules-left": [//finished
+    // reloading the css style if a modification is detected on the style sheet file or any imported css files.
+    "reload_style_on_change": true,
+    "modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
         "cpu",
         "memory",
         "temperature",
-        "disk",
-        "custom/updates"
+        "disk"
     ],
-    "modules-center": [//finished
+    "modules-center": [
         "custom/music"
     ],
     "modules-right": [
         "network",
         "pulseaudio",
-        //"backlight",
         "battery",
-        "custom/notifications",//done
         "tray",
         "clock",
-        "custom/weather",
-        "custom/cycle_wall",
-        "custom/clipboard",
-        "custom/ss",
-        "custom/power",
-        "custom/custom"
+        "custom/power"
     ],
     "custom/launcher": {
         "format": "{}",
@@ -132,8 +119,8 @@
         "format-linked": " {ifname} (No IP)",
         "format-alt": "{bandwidthUpBytes} | {bandwidthDownBytes}",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr} 󰩟 {gwaddr}",
-        "tooltip-format-wifi": "{icon} {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "{icon} {ipaddr}/{cidr}",
+        "tooltip-format-wifi": "Wifi: {icon} {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "Ethernet: {icon} {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "{icon} Disconnected",
         "on-click-right": "nm-connection-editor",
         "format-icons": {
@@ -168,24 +155,6 @@
         },
         "on-click": "pavucontrol"
     },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{icon} {percent}%",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "on-scroll-up": "light -A 1",
-        "on-scroll-down": "light -U 1",
-        "interval": 2
-    },
     "battery": {
         "states": {
             "good": 100,
@@ -197,7 +166,7 @@
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
-        "format-full": " {capacity}%",
+        "format-full": " {capacity}%",
         "format-icons": [
             "󰁺",
             "󰁻",
@@ -211,22 +180,6 @@
             "󰁹"
         ],
         "interval": 2
-    },
-    "custom/notifications": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "sleep 0.15 && swaync-client -t -sw",
-        "on-click-right": "sleep 0.15 && swaync-client -d -sw",
-        "escape": true
     },
     "tray": {
         "icon-size": 15,
@@ -246,58 +199,10 @@
         "format-calendar-weekdays": "<span color='#f9e2af'><b>{}</b></span>",
         "interval": 60
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "custom/weather": {
-        "tooltip": true,
-        "format": "{}",
-        "exec": "~/.scripts/wayland_scripts/tools/expand weather",
-        "return-type": "json"
-    },
-    "custom/ss": {
-        "format": "{}",
-        "exec": "~/.scripts/wayland_scripts/tools/expand ss-icon",
-        "return-type": "json",
-        "on-click": "~/.scripts/wayland_scripts/screenshot_full"
-    },
-    "custom/cycle_wall": {
-        "format": "{}",
-        "exec": "~/.scripts/wayland_scripts/tools/expand wall",
-        "return-type": "json",
-        // "interval": 1,
-        "on-click": "~/.scripts/wayland_scripts/tools/expand cycle",
-        "on-click-right": "~/.scripts/wayland_scripts/tools/expand cycler"
-    },
-    "custom/clipboard": {
-        "format": "{}",
-        "exec": "~/.scripts/wayland_scripts/tools/expand clipboard",
-        "return-type": "json",
-        // Window position is managed in Hyperland config's windowrulev2
-        //"on-click": "pkill tofi || sleep 0.15 && cliphist list | tofi -c ~/.config/tofi/tofi.clip.conf | cliphist decode | wl-copy",
-        //"on-click-middle": "rm -f ~/.cache/cliphist/db",
-        //"on-click-right": "pkill tofi || sleep 0.15 && cliphist list | tofi -c ~/.config/tofi/tofi.clip.conf | cliphist delete",
-        // Here "-l top_right -x -15 -y 10" doesn't matter as '-n' mode is used
-        "on-click": "pkill wofi || cliphist list | wofi --dmenu -p clippick -l top_right -x -15 -y 10 -n | cliphist decode | wl-copy",
-        "on-click-middle": "rm -f ~/.cache/cliphist/db",
-        "on-click-right": "pkill wofi || cliphist list | wofi --dmenu -p clippick -l top_right -x -15 -y 10 -n | cliphist delete",
-        "escape": true
-    },
     "custom/power": {
         "format": "{}",
-        // "exec": "~/.scripts/tools/expand power",
         "exec": "echo '{\"text\":\"⏻\",\"tooltip\":\"Power\"}'",
         "return-type": "json",
-        "on-click": "~/.config/wlogout/launch.sh"
-    },
-    "custom/custom": {
-        "format": "{}",
-        "exec": "~/.scripts/wayland_scripts/tools/expand arrow-icon",
-        "on-click": "~/.scripts/wayland_scripts/tools/expand_toolbar",
-        "return-type": "json"
+        "on-click": "exit"
     }
 }

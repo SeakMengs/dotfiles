@@ -9,6 +9,8 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
+alias f='yazi'
+alias fetch='fastfetch'
 alias monitor_mode="$HOME/.config/scripts/monitor_mode.sh"
 alias syncdot="$HOME/.config/scripts/syncdot.sh"
 alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
