@@ -113,6 +113,7 @@
 #power-profiles-daemon,
 #bluetooth,
 #custom-music,
+#custom-notification,
 #custom-power {
     background-color: @surface0;
     color: @text;
@@ -548,4 +549,10 @@
     font-size: 20px;
 }
 
+
 /* =============================== */
+
+#custom-notification {
+    color: @mauve;
+    padding: 0 20px 0 15px;
+}

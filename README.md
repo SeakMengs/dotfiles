@@ -15,12 +15,11 @@ $ sudo pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfe
 btrfs-assistant pipewire pipewire-alsa pipewire-pulse \
 pavucontrol sof-firmware ttf-font-awesome \
 ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
-gwenview bluez bluez-utils blueman
-
+gwenview bluez bluez-utils blueman swaync
 ```
 
 ```
-$ yay -S system76-power pywal-16-colors
+$ yay -S system76-power pywal-16-colors hyprpicker
 ```
 
 ## Installation
@@ -64,6 +63,11 @@ $ chsh -s $(which zsh)
 
 ```
 $ chmod +x ~/.config/scripts/*
+```
+
+### Enable hypridle
+```
+$ systemctl --user enable --now hypridle.service
 ```
 
 ## Programs

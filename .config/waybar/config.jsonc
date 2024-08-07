@@ -22,6 +22,7 @@
         "battery",
         "tray",
         "clock",
+        "custom/notification",
         "custom/power"
     ],
     "custom/launcher": {
@@ -125,7 +126,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format": "{icon} ↕{bandwidthTotalBytes}",
+        // "format": "{icon} ↕{bandwidthTotalBytes}",
+        "format": "{icon}",
         "format-disconnected": "{icon} No Internet",
         "format-linked": " {ifname} (No IP)",
         "format-alt": "{icon} {bandwidthUpBytes} | {bandwidthDownBytes}",
@@ -197,5 +199,25 @@
         "exec": "echo '{\"text\":\"⏻\",\"tooltip\":\"Power\"}'",
         "return-type": "json",
         "on-click": "exit"
-    }
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+      }
 }
