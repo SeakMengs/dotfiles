@@ -1,5 +1,3 @@
-# Introduction
-
 This repository contains my personal dotfiles for my Arch Linux setup. The dotfiles are managed using GNU Stow. Feel free to use any part of the configuration that you find useful.
 
 ## Screenshots
@@ -11,14 +9,15 @@ coming soon...
 Ensure you have the following installed on your system (Not necessary mean u need those, these are for me to copy paste if i ever need to fresh install my system)
 
 ```
-$ sudo pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper \
+$ sudo pacman -S git hyprland kitty dolphin thunar waybar stow nvim hyprpaper zsh fastfetch snapper \
 btrfs-assistant pipewire pipewire-alsa alsa-utils pipewire-pulse pavucontrol sof-firmware \
 ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
-gwenview bluez bluez-utils blueman swaync
+gwenview bluez bluez-utils blueman swaync okular qt5ct qt6ct kvantum arc-gtk cliphist \
+dunst
 ```
 
 ```
-$ yay -S system76-power pywal-16-colors hyprpicker
+$ yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git
 ```
 
 ## Installation
@@ -73,7 +72,7 @@ $ systemctl --user enable --now hypridle.service
 
 -   **Window Manager**: [Hyprland](https://hyprland.org)
 -   **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
--   **File Manager**: [Thunar](https://docs.xfce.org/xfce/thunar/start)
+-   **File Manager**: [Dolphin](https://apps.kde.org/dolphin/)
 -   **Bar**: [Waybar](https://github.com/Alexays/Waybar)
 -   **Launcher**: [Rofi](https://github.com/davatorium/rofi)
 -   **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
@@ -100,7 +99,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+Q` | Open terminal (`kitty`) |
 | `SUPER+C` | Kill active window |
 | `SUPER+M` | Exit Hyprland |
-| `SUPER+E` | Open file manager (`thunar`) |
+| `SUPER+E` | Open file manager (`dolphin`) |
 | `SUPER+V` | Show clipboard history using `cliphist` and `rofi` |
 | `SUPER+T` | Toggle floating mode for the active window |
 | `SUPER+Space` | Open Rofi application launcher |

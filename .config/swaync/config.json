@@ -86,6 +86,10 @@
         {
           "label": "󰂯",
           "command": "blueman-manager"
+        },
+        {
+          "label": "󰏘",
+          "command": "nwg-look"
         }
       ]
     }
