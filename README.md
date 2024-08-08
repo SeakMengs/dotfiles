@@ -12,9 +12,8 @@ Ensure you have the following installed on your system (Not necessary mean u nee
 
 ```
 $ sudo pacman -S git hyprland kitty thunar waybar stow nvim hyprpaper zsh fastfetch snapper \
-btrfs-assistant pipewire pipewire-alsa pipewire-pulse \
-pavucontrol sof-firmware ttf-font-awesome \
-ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
+btrfs-assistant pipewire pipewire-alsa alsa-utils pipewire-pulse pavucontrol sof-firmware \
+ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
 gwenview bluez bluez-utils blueman swaync
 ```
 
@@ -77,6 +76,7 @@ $ systemctl --user enable --now hypridle.service
 -   **File Manager**: [Thunar](https://docs.xfce.org/xfce/thunar/start)
 -   **Bar**: [Waybar](https://github.com/Alexays/Waybar)
 -   **Launcher**: [Rofi](https://github.com/davatorium/rofi)
+-   **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
 -   **Wallpaper Setter**: [Hyprpaper](https://github.com/hyprwm/hyprpaper)
 
 ## Keybindings
@@ -188,5 +188,6 @@ The main modifier key is set to `SUPER` (Windows key).
 ## Inspiration and Credits
 
 -   [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
--   [rchrdwllm](https://github.com/rchrdwllm/dotfiles)
+-   [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
+-   [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
 -   [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
