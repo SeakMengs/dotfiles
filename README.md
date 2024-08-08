@@ -77,7 +77,10 @@ $ systemctl --user enable --now hypridle.service
 -   **Bar**: [Waybar](https://github.com/Alexays/Waybar)
 -   **Launcher**: [Rofi](https://github.com/davatorium/rofi)
 -   **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
--   **Wallpaper Setter**: [Hyprpaper](https://github.com/hyprwm/hyprpaper)
+-   **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
+-   **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+-   **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
+-   **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
 
 ## Keybindings
 
@@ -104,6 +107,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+F` | Toggle fullscreen for the active window |
 | `SUPER+P` | Toggle pseudo mode (e.g., dwindle) |
 | `SUPER+J` | Toggle split layout (e.g., dwindle) |
+| `SUPER+W` | Open rofi menu to select wallpapers |
 
 ### Workspace Navigation
 
@@ -166,6 +170,10 @@ The main modifier key is set to `SUPER` (Windows key).
 | ------- | ------ |
 | `SUPER+Left Mouse Button` | Move window |
 | `SUPER+Right Mouse Button` | Resize window |
+| `SUPER+SHIFT+Right` | Resize active window right by 20 pixels|
+| `SUPER+SHIFT+Left` | Resize active window left by 20 pixels|
+| `SUPER+SHIFT+Up` | Resize active window up by 20 pixels|
+| `SUPER+SHIFT+Down` | Resize active window down by 20 pixels|
 
 ### Audio Controls
 

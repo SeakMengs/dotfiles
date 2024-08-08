@@ -28,10 +28,10 @@
     "custom/launcher": {
         "format": "{}",
         "tooltip": true,
-        "exec": "echo '{\"text\":\"󰣇\",\"tooltip\":\"Arch Linux\"}'",
-        "return-type": "json"
-        // "on-click": "pkill wofi || wofi --show drun ", //-n",
-        // "on-click-right": "pkill wofi || wofi --show run" // -n",
+        "exec": "echo '{\"text\":\"󰣇\",\"tooltip\":\"I use Arch btw\"}'",
+        "return-type": "json",
+        "on-click": "$HOME/.config/scripts/wallpaperSelect.sh",
+        "on-click-right": "hyprpicker -a"
     },
     "hyprland/workspaces": {
         "format": "{name}",
@@ -198,7 +198,7 @@
         "format": "{}",
         "exec": "echo '{\"text\":\"⏻\",\"tooltip\":\"Power\"}'",
         "return-type": "json",
-        "on-click": "exit"
+        "on-click": "$HOME/.config/scripts/wlogout.sh"
     },
     "custom/notification": {
         "tooltip": false,
