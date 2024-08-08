@@ -87,13 +87,16 @@ env = WLR_DRM_DEVICES,$HOME/.config/hypr/nvidia-card:$HOME/.config/hypr/intel-ca
 EOL
 
   # Update mkinitcpio config
-  check_sudo
-  echo "Updating mkinitcpio configuration..."
-  update_mkinitcpio_modules "external"
+  # check_sudo
+  # echo "Updating mkinitcpio configuration..."
+  # update_mkinitcpio_modules "external"
 
   # Update modprobe config for Nvidia
   echo "Updating Nvidia modprobe configuration..."
-  echo "options nvidia_drm modeset=1 fbdev=1" | sudo tee $SYSTEM_NVIDIA_MODPROBE > /dev/null
+  echo "options nvidia_drm modeset=1 fbdev=1
+options nvidia NVreg_PreserveVideoMemoryAllocations=1
+options nvidia NVreg_TemporaryFilePath=/var/tmp
+  " | sudo tee $SYSTEM_NVIDIA_MODPROBE > /dev/null
 
   # Update modprobe blacklist config
   echo "Updating modprobe blacklist configuration..."
@@ -125,9 +128,9 @@ internal_monitor_mode() {
   sed -i '/^monitor = eDP-2,disable/s/^/#/; /^monitor = eDP-1,disable/s/^/#/; /^env = WLR_DRM_DEVICES/s/^/#/' $USER_HYPR_CONFIG
 
   # Update mkinitcpio config
-  check_sudo
-  echo "Updating mkinitcpio configuration..."
-  update_mkinitcpio_modules "internal"
+  # check_sudo
+  # echo "Updating mkinitcpio configuration..."
+  # update_mkinitcpio_modules "internal"
 
   # Update modprobe config for Nvidia
   echo "Updating Nvidia modprobe configuration..."
