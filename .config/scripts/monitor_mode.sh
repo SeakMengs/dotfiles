@@ -24,7 +24,9 @@ update_mkinitcpio_modules() {
   mkinitcpio_content=$(cat $SYSTEM_MKINITCPIO_CONFIG)
 
   if [[ $mode == "external" ]]; then
-    modules_to_add="nvidia nvidia_modeset nvidia_uvm nvidia_drm"
+    # modules_to_add="nvidia nvidia_modeset nvidia_uvm nvidia_drm"
+    # Because hibernation, removing these module would still work the same and allow me to use hibernation
+    modules_to_add=""
     modules_to_remove="nouveau"
   elif [[ $mode == "internal" ]]; then
     modules_to_add="nouveau"
@@ -59,12 +61,14 @@ update_nvidia_utils_modprobe_config() {
   local mode=$1
   if [[ -f $NVIDIA_UTILS_CONF ]]; then
     if [[ $mode == "external" ]]; then
-      if grep -q "#blacklist nouveau" $NVIDIA_UTILS_CONF; then
-        sudo sed -i 's/#blacklist nouveau/blacklist nouveau/' $NVIDIA_UTILS_CONF
+      # Remove all leading # before 'blacklist nouveau'
+      if grep -q "^#*blacklist nouveau" $NVIDIA_UTILS_CONF; then
+        sudo sed -i 's/^#*blacklist nouveau/blacklist nouveau/' $NVIDIA_UTILS_CONF
       fi
     elif [[ $mode == "internal" ]]; then
-      if grep -q "blacklist nouveau" $NVIDIA_UTILS_CONF; then
-        sudo sed -i 's/blacklist nouveau/#blacklist nouveau/' $NVIDIA_UTILS_CONF
+      # Add a leading # before 'blacklist nouveau' if not already present
+      if grep -q "^blacklist nouveau" $NVIDIA_UTILS_CONF; then
+        sudo sed -i 's/^blacklist nouveau/#blacklist nouveau/' $NVIDIA_UTILS_CONF
       fi
     fi
   fi
@@ -87,9 +91,9 @@ env = WLR_DRM_DEVICES,$HOME/.config/hypr/nvidia-card:$HOME/.config/hypr/intel-ca
 EOL
 
   # Update mkinitcpio config
-  # check_sudo
-  # echo "Updating mkinitcpio configuration..."
-  # update_mkinitcpio_modules "external"
+  check_sudo
+  echo "Updating mkinitcpio configuration..."
+  update_mkinitcpio_modules "external"
 
   # Update modprobe config for Nvidia
   echo "Updating Nvidia modprobe configuration..."
@@ -128,9 +132,9 @@ internal_monitor_mode() {
   sed -i '/^monitor = eDP-2,disable/s/^/#/; /^monitor = eDP-1,disable/s/^/#/; /^env = WLR_DRM_DEVICES/s/^/#/' $USER_HYPR_CONFIG
 
   # Update mkinitcpio config
-  # check_sudo
-  # echo "Updating mkinitcpio configuration..."
-  # update_mkinitcpio_modules "internal"
+  check_sudo
+  echo "Updating mkinitcpio configuration..."
+  update_mkinitcpio_modules "internal"
 
   # Update modprobe config for Nvidia
   echo "Updating Nvidia modprobe configuration..."
