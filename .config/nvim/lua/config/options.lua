@@ -4,3 +4,6 @@
 
 vim.opt.winbar = "%=%m %f"
 vim.opt.relativenumber = false
+
+-- Auto format on save
+vim.g.autoformat = true
