@@ -13,16 +13,16 @@ BEZIER="0.4,0.2,0.4,1.0"
 SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
-if pidof swaybg > /dev/null; then
+if pidof swaybg >/dev/null; then
   pkill swaybg
 fi
 
 # Retrieve image files as a list
-PICS=($(find -L "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \) | sort ))
+PICS=($(find -L "${wallpaperDir}" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -iname \*.gif \) | sort))
 
 # Use date variable to increase randomness
-randomNumber=$(( ($(date +%s) + RANDOM) + $$ ))
-randomPicture="${PICS[$(( randomNumber % ${#PICS[@]} ))]}"
+randomNumber=$((($(date +%s) + RANDOM) + $$))
+randomPicture="${PICS[$((randomNumber % ${#PICS[@]}))]}"
 randomChoice="[${#PICS[@]}] Random"
 
 # Rofi command
@@ -32,16 +32,19 @@ rofiCommand="rofi -show -dmenu -theme ${rofiTheme}"
 executeCommand() {
 
   if command -v swww &>/dev/null; then
+    echo "Wallpaper set to: $1" . $SWWW_PARAMS
     swww img "$1" ${SWWW_PARAMS}
   elif command -v swaybg &>/dev/null; then
     swaybg -i "$1" &
-  
   else
     echo "Neither swww nor swaybg are installed."
     exit 1
   fi
 
   ln -sf "$1" "$HOME/.current_wallpaper"
+
+  # Sleep for swww to finish otherwise pywal will interrupt swww animation
+  sleep ${DURATION}
 
   # update pywal, waybar, swaync
   if command -v wal &>/dev/null; then
@@ -65,12 +68,12 @@ menu() {
   printf "$randomChoice\n"
 
   for i in "${!PICS[@]}"; do
-  
+
     # If not *.gif, display
     if [[ -z $(echo "${PICS[$i]}" | grep .gif$) ]]; then
       printf "$(basename "${PICS[$i]}" | cut -d. -f1)\x00icon\x1f${PICS[$i]}\n"
     else
-    # Displaying .gif to indicate animated images
+      # Displaying .gif to indicate animated images
       printf "$(basename "${PICS[$i]}")\n"
     fi
   done
@@ -98,7 +101,7 @@ main() {
 
   # Find the selected file
   for file in "${PICS[@]}"; do
-  # Getting the file
+    # Getting the file
     if [[ "$(basename "$file" | cut -d. -f1)" = "$choice" ]]; then
       selectedFile="$file"
       break
@@ -117,7 +120,7 @@ main() {
 }
 
 # Check if rofi is already running
-if pidof rofi > /dev/null; then
+if pidof rofi >/dev/null; then
   pkill rofi
   exit 0
 fi
