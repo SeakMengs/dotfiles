@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
@@ -25,7 +25,7 @@
 
 # Introduction
 
-This repository contains my personal dotfiles for my Arch Linux setup. It feature auto color scheme based on selected wallpaper.
+This repository contains my personal dotfiles for my Arch Linux setup. It features auto color scheme based on selected wallpaper.
 The dotfiles are managed using GNU Stow. Feel free to use any part of the configuration that you find useful :)
 
 # Screenshots
