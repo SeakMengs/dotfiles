@@ -1,6 +1,5 @@
 # Table of contents
 
-- [Table of contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
 - [Requirements](#requirements)
