@@ -20,6 +20,7 @@
   - [Workspace Scroll](#workspace-scroll)
   - [Window Management](#window-management)
   - [Audio Controls](#audio-controls)
+  - [Brightness Controls](#brightness-controls)
   - [OBS Controls](#obs-controls)
 - [Inspiration and Credits](#inspiration-and-credits)
 
@@ -142,6 +143,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+P`     | Toggle pseudo mode (e.g., dwindle)                 |
 | `SUPER+J`     | Toggle split layout (e.g., dwindle)                |
 | `SUPER+W`     | Open rofi menu to select wallpapers                |
+| `SUPER+F4`     | Open logout menu (`wlogout`)                       |
 
 ## Workspace Navigation
 
@@ -219,6 +221,13 @@ The main modifier key is set to `SUPER` (Windows key).
 | `XF86AudioPlay`        | Play/Pause media      |
 | `XF86AudioPrev`        | Previous media track  |
 | `XF86AudioNext`        | Next media track      |
+
+## Brightness Controls
+
+| Keybind                | Action                    |
+| ---------------------- | ------------------------- |
+| `XF86MonBrightnessUp`  | Increase brightness by 5% |
+| `XF86MonBrightnessDown`| Decrease brightness by 5% |
 
 ## OBS Controls
 
