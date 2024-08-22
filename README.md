@@ -21,7 +21,9 @@
   - [Window Management](#window-management)
   - [Audio Controls](#audio-controls)
   - [Brightness Controls](#brightness-controls)
-  - [OBS Controls](#obs-controls)
+  - [Global Keybinds](#global-keybinds)
+    - [OBS](#obs)
+    - [Discord](#discord)
 - [Inspiration and Credits](#inspiration-and-credits)
 
 # Introduction
@@ -52,7 +54,7 @@ dunst
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git
+yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git
 ```
 
 # Installation
@@ -143,7 +145,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+P`     | Toggle pseudo mode (e.g., dwindle)                 |
 | `SUPER+J`     | Toggle split layout (e.g., dwindle)                |
 | `SUPER+W`     | Open rofi menu to select wallpapers                |
-| `SUPER+F4`     | Open logout menu (`wlogout`)                       |
+| `SUPER+F4`    | Open logout menu (`wlogout`)                       |
 
 ## Workspace Navigation
 
@@ -224,17 +226,25 @@ The main modifier key is set to `SUPER` (Windows key).
 
 ## Brightness Controls
 
-| Keybind                | Action                    |
-| ---------------------- | ------------------------- |
-| `XF86MonBrightnessUp`  | Increase brightness by 5% |
-| `XF86MonBrightnessDown`| Decrease brightness by 5% |
+| Keybind                 | Action                    |
+| ----------------------- | ------------------------- |
+| `XF86MonBrightnessUp`   | Increase brightness by 5% |
+| `XF86MonBrightnessDown` | Decrease brightness by 5% |
 
-## OBS Controls
+## Global Keybinds
+
+### OBS
 
 | Keybind | Action                 |
 | ------- | ---------------------- |
 | `F7`    | Start recording in OBS |
 | `F8`    | Stop recording in OBS  |
+
+### Discord
+
+| Keybind    | Action                 |
+| ---------- | ---------------------- |
+| `SHIFT+F7` | Toggle mute in Discord |
 
 # Inspiration and Credits
 
