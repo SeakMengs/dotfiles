@@ -14,8 +14,10 @@ return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = true },
   {
     "stevearc/oil.nvim",
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     cmd = "Oil",
-    commit = "18272aba9d00a3176a5443d50dbb4464acc167bd",
+    -- commit = "18272aba9d00a3176a5443d50dbb4464acc167bd",
     opts = {
       -- Set to false if you still want to use netrw.
       default_file_explorer = true,
@@ -34,6 +36,9 @@ return {
           return vim.startswith(name, ".") or vim.tbl_contains(ignore_folders, name)
         end,
       },
+      win_options = {
+        wrap = true,
+      },
       -- Configuration for the floating window in oil.open_float
       float = {
         padding = 2,
@@ -42,19 +47,16 @@ return {
         border = "rounded",
         win_options = {
           winblend = 0,
+          wrap = true,
         },
       },
       -- Custom Keymap
       keymaps = {
-        ["<C-c>"] = false,
-        ["<C-s>"] = "actions.save",
         ["q"] = "actions.close",
         ["<Esc>"] = "actions.close",
         ["<C-y>"] = "actions.copy_entry_path",
       },
     },
-    -- Optional dependencies
-    dependencies = { "nvim-tree/nvim-web-devicons" },
     -- Use g? to see default key mappings
     keys = {
       {
@@ -63,13 +65,13 @@ return {
           local oil = require("oil")
           oil.toggle_float()
 
-          -- -- Wait until oil has opened, for a maximum of 1 second.
-          -- vim.wait(1000, function()
-          --   return oil.get_cursor_entry() ~= nil
-          -- end)
-          -- if oil.get_cursor_entry() then
-          --   oil.open_preview()
-          -- end
+          -- Wait until oil has opened, for a maximum of 1 second.
+          vim.wait(1000, function()
+            return oil.get_cursor_entry() ~= nil
+          end)
+          if oil.get_cursor_entry() then
+            oil.open_preview()
+          end
         end,
         desc = "Open file explorer (Oil)",
       },

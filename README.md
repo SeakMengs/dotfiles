@@ -54,7 +54,7 @@ dunst
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git
+yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile
 ```
 
 # Installation
@@ -145,6 +145,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+P`     | Toggle pseudo mode (e.g., dwindle)                 |
 | `SUPER+J`     | Toggle split layout (e.g., dwindle)                |
 | `SUPER+W`     | Open rofi menu to select wallpapers                |
+| `SUPER+.`     | Open emoji picker (`Smile`)                        |
 | `SUPER+F4`    | Open logout menu (`wlogout`)                       |
 
 ## Workspace Navigation
