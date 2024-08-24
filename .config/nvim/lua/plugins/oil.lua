@@ -55,6 +55,7 @@ return {
         ["q"] = "actions.close",
         ["<Esc>"] = "actions.close",
         ["<C-y>"] = "actions.copy_entry_path",
+        ["<C-s>"] = false, -- Remove the default <C-s> keybinding
       },
     },
     -- Use g? to see default key mappings
