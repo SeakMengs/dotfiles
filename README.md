@@ -54,7 +54,7 @@ dunst
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile
+yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox
 ```
 
 # Installation

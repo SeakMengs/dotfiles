@@ -51,6 +51,10 @@ executeCommand() {
     wal -i "$1"
   fi
 
+  if command -v pywalfox &>/dev/null; then
+    pywalfox update
+  fi
+
   if command -v waybar &>/dev/null; then
     killall -q waybar
     waybar &
