@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = visual-studio-bin
+
+[Action]
+Description = Fix permissions for Visual Studio Code extensions
+When = PostTransaction
+Exec = /usr/bin/chown -R $(whoami) /opt/visual-studio-code
+

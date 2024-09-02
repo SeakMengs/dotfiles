@@ -29,7 +29,7 @@
 # Introduction
 
 This repository contains my personal dotfiles for my Arch Linux setup. It features auto color scheme based on selected wallpaper.
-The dotfiles are managed using GNU Stow. Feel free to use any part of the configuration that you find useful :)
+The dotfiles are managed using `GNU Stow`, there is a scripts in the `.config/scripts/syncdot.sh` which I use to sync the dotfiles, although keep in mind that `personal`, `etc`, `screenshots` will not be synced. For further information check `stow-local-ignore`. Feel free to use any part of the configuration that you find useful. Enjoy :)
 
 # Screenshots
 
@@ -50,7 +50,7 @@ sudo pacman -S git hyprland kitty dolphin thunar waybar stow nvim hyprpaper zsh 
 btrfs-assistant pipewire pipewire-alsa alsa-utils pipewire-pulse pavucontrol sof-firmware \
 ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
 gwenview bluez bluez-utils blueman swaync okular qt5ct qt6ct kvantum arc-gtk cliphist \
-dunst
+dunst lazygit
 ```
 
 ```
