@@ -19,3 +19,6 @@ opt.softtabstop = 2
 opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
+
+-- Spell check
+-- opt.spell = true

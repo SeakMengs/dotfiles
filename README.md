@@ -191,10 +191,10 @@ The main modifier key is set to `SUPER` (Windows key).
 
 ## Special Workspaces
 
-| Keybind         | Action                                                  |
-| --------------- | ------------------------------------------------------- |
-| `SUPER+A`       | Toggle special workspace (e.g., scratchpad)             |
-| `SUPER+SHIFT+A` | Move active window to special workspace (e.g., `magic`) |
+| Keybind         | Action                                  |
+| --------------- | --------------------------------------- |
+| `SUPER+A`       | Toggle special workspace                |
+| `SUPER+SHIFT+A` | Move active window to special workspace |
 
 ## Workspace Scroll
 

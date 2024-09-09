@@ -1,0 +1,20 @@
+name: "Local dev"
+services:
+  db_mysql:
+    container_name: "local_dev_mysql"
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_TCP_PORT: 3306
+    ports:
+      # host port: mysql tcp port
+      - "3306:3306"
+    volumes:
+      # Mount database data so that even if the container got deleted, the volum would still be there unless delted by us
+      - dbdata:/var/lib/mysql
+      # set a file as a container initialization script, which will run upon container creation.
+      # - "./<your_sql_file_name_here>.sql:/docker-entrypoint-initdb.d/1.sql"
+
+volumes:
+  dbdata:
