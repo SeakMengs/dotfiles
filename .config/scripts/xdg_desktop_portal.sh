@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 sleep 1
 killall -e xdg-desktop-portal-hyprland
-killall -e xdg-desktop-portal-wlr
+killall -e xdg-desktop-portal-gtk
 killall xdg-desktop-portal
-/usr/lib/xdg-desktop-portal-hyprland &
+# /usr/lib/xdg-desktop-portal-hyprland &
+systemctl --user start xdg-desktop-portal-hyprland.service
 sleep 2
-/usr/lib/xdg-desktop-portal &
+systemctl --user start xdg-desktop-portal.service
+# /usr/lib/xdg-desktop-portal &

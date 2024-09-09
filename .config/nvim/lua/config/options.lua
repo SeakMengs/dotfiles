@@ -7,7 +7,7 @@ local opt = vim.opt
 -- Appearance
 opt.winbar = "%=%m %f"
 opt.number = true
-opt.relativenumber = false
+opt.relativenumber = true
 
 -- Auto format on save
 vim.g.autoformat = true

@@ -136,14 +136,14 @@
 /* =============================== */
 /* Workspaces with no number*/
 #workspaces {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
+/* Use this if u want workspace button circle */
 #workspaces * {
   font-size: 0px;
 }
-
 #workspaces button {
   background-color: @surface3;
   color: @mauve;
@@ -155,12 +155,8 @@
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
   box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
 }
-/*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
 
 #workspaces button.active {
-  /*color: @surface0;
-    border-radius: 1rem;
-    padding: 0rem 10px;*/
   background: radial-gradient(
     circle,
     rgba(203, 166, 247, 1) 0%,
@@ -188,10 +184,10 @@
   animation: gradient_f 20s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
-
 #workspaces button:hover {
   background-color: @mauve;
 }
+/* End of circle workspaces button  */
 
 @keyframes gradient {
   0% {

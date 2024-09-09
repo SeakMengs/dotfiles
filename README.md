@@ -245,7 +245,7 @@ The main modifier key is set to `SUPER` (Windows key).
 
 | Keybind    | Action                 |
 | ---------- | ---------------------- |
-| `SHIFT+F7` | Toggle mute in Discord |
+| `SHIFT+F6` | Toggle mute in Discord |
 
 # Inspiration and Credits
 
