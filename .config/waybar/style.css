@@ -76,12 +76,12 @@
 /* =============================== */
 /* Universal Styling */
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetbrainsMono Nerd Font", "CaskaydiaCove Nerd Font",
-        "Font Awesome 6 Free", "monospace";
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: "JetbrainsMono Nerd Font", "CaskaydiaCove Nerd Font",
+    "Font Awesome 6 Free", "monospace";
+  font-size: 13px;
+  min-height: 0;
 }
 
 /* =============================== */
@@ -89,8 +89,8 @@
 /* =============================== */
 /* Bar Styling */
 #waybar {
-    background: transparent;
-    color: @text;
+  background: transparent;
+  color: @text;
 }
 
 /* =============================== */
@@ -115,120 +115,120 @@
 #custom-music,
 #custom-notification,
 #custom-power {
-    background-color: @surface0;
-    color: @text;
-    border-radius: 16px;
-    padding: 0.2rem 0.4rem;
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-right: 10px;
+  background-color: @surface0;
+  color: @text;
+  border-radius: 16px;
+  padding: 0.2rem 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 10px;
 }
 
 /* For windows where it doesn't separate */
-/* #waybar > box {
-  background-color: @surface0;
-  color: @text;
-  padding: 0.5rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-} */
+/* #waybar > box { */
+/*   background-color: @surface0; */
+/*   color: @text; */
+/*   padding: 0.5rem 1rem; */
+/*   box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px; */
+/* } */
 
 /* =============================== */
 /* Workspaces with no number*/
 #workspaces {
-    padding-left: 8px;
-    padding-right: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #workspaces * {
-    font-size: 0px;
+  font-size: 0px;
 }
 
 #workspaces button {
-    background-color: @surface3;
-    color: @mauve;
-    border-radius: 100%;
-    min-height: 14px;
-    min-width: 14px;
-    margin: 5px 8px;
-    padding: 0px;
-    /*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
-    transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-    box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+  background-color: @surface3;
+  color: @mauve;
+  border-radius: 100%;
+  min-height: 8px;
+  min-width: 12px;
+  margin: 5px 8px;
+  padding: 0px;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
 }
+/*transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0); easeInOutCubic */
 
 #workspaces button.active {
-    /*color: @surface0;
+  /*color: @surface0;
     border-radius: 1rem;
     padding: 0rem 10px;*/
-    background: radial-gradient(
-        circle,
-        rgba(203, 166, 247, 1) 0%,
-        rgba(193, 168, 247, 1) 12%,
-        rgba(249, 226, 175, 1) 19%,
-        rgba(189, 169, 247, 1) 20%,
-        rgba(182, 171, 247, 1) 24%,
-        rgba(198, 255, 194, 1) 36%,
-        rgba(177, 172, 247, 1) 37%,
-        rgba(170, 173, 248, 1) 48%,
-        rgba(255, 255, 255, 1) 52%,
-        rgba(166, 174, 248, 1) 52%,
-        rgba(160, 175, 248, 1) 59%,
-        rgba(148, 226, 213, 1) 66%,
-        rgba(155, 176, 248, 1) 67%,
-        rgba(152, 177, 248, 1) 68%,
-        rgba(205, 214, 244, 1) 77%,
-        rgba(148, 178, 249, 1) 78%,
-        rgba(144, 179, 250, 1) 82%,
-        rgba(180, 190, 254, 1) 83%,
-        rgba(141, 179, 250, 1) 90%,
-        rgba(137, 180, 250, 1) 100%
-    );
-    background-size: 400% 400%;
-    animation: gradient_f 20s ease-in-out infinite;
-    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  background: radial-gradient(
+    circle,
+    rgba(203, 166, 247, 1) 0%,
+    rgba(193, 168, 247, 1) 12%,
+    rgba(249, 226, 175, 1) 19%,
+    rgba(189, 169, 247, 1) 20%,
+    rgba(182, 171, 247, 1) 24%,
+    rgba(198, 255, 194, 1) 36%,
+    rgba(177, 172, 247, 1) 37%,
+    rgba(170, 173, 248, 1) 48%,
+    rgba(255, 255, 255, 1) 52%,
+    rgba(166, 174, 248, 1) 52%,
+    rgba(160, 175, 248, 1) 59%,
+    rgba(148, 226, 213, 1) 66%,
+    rgba(155, 176, 248, 1) 67%,
+    rgba(152, 177, 248, 1) 68%,
+    rgba(205, 214, 244, 1) 77%,
+    rgba(148, 178, 249, 1) 78%,
+    rgba(144, 179, 250, 1) 82%,
+    rgba(180, 190, 254, 1) 83%,
+    rgba(141, 179, 250, 1) 90%,
+    rgba(137, 180, 250, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #workspaces button:hover {
-    background-color: @mauve;
+  background-color: @mauve;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 30%;
-    }
+  50% {
+    background-position: 100% 30%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient_f {
-    0% {
-        background-position: 0% 200%;
-    }
+  0% {
+    background-position: 0% 200%;
+  }
 
-    50% {
-        background-position: 200% 0%;
-    }
+  50% {
+    background-position: 200% 0%;
+  }
 
-    100% {
-        background-position: 400% 200%;
-    }
+  100% {
+    background-position: 400% 200%;
+  }
 }
 
 @keyframes gradient_f_nh {
-    0% {
-        background-position: 0% 200%;
-    }
+  0% {
+    background-position: 0% 200%;
+  }
 
-    100% {
-        background-position: 200% 200%;
-    }
+  100% {
+    background-position: 200% 200%;
+  }
 }
 
 /* =============================== */
@@ -238,39 +238,39 @@
 #cpu,
 #memory,
 #temperature {
-    color: @blue;
+  color: @blue;
 }
 
 #cpu {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-right: 0px;
-    padding-right: 5px;
-    padding-left: 0.8rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0px;
+  padding-right: 5px;
+  padding-left: 0.8rem;
 }
 
 #memory {
-    border-radius: 0px;
-    margin-right: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
+  border-radius: 0px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #temperature {
-    border-radius: 0px;
-    /*border-top-right-radius: 16px;
+  border-radius: 0px;
+  /*border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;*/
-    margin-right: 0px;
-    padding-left: 5px;
-    padding-right: 10px;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 #disk {
-    color: @peach;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-left: 5px;
-    padding-right: 0.8rem;
+  color: @peach;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 5px;
+  padding-right: 0.8rem;
 }
 
 /* =============================== */
@@ -278,13 +278,13 @@
 /* =============================== */
 /* Clock Module */
 #clock {
-    color: @flamingo;
-    padding-right: 0.8rem;
-    padding-left: 0.8rem;
+  color: @flamingo;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
 }
 
 /* =============================== */
-
+/* Gradient music player */
 /* #custom-music.low {
   background: rgb(148, 226, 213);
   background: linear-gradient(
@@ -371,86 +371,11 @@
   background: @surface0;
 } */
 
-/* Dynamic music background animation using pywal */
-/* #custom-music.low {
-  background: linear-gradient(
-    52deg,
-    @surface0 0%,
-    @color2 19%,
-    @color3 43%,
-    @color5  56%,
-    @color6 80%,
-    @surface0 100%
-  );
-  background-size: 300% 300%;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
-  animation: gradient 15s ease infinite;
-  font-weight: bold;
-  color: @foreground;
-}
-
-#custom-music.random {
-  background: radial-gradient(
-    circle,
-    @surface0 0%,
-    @color5 21%,
-    @surface3 34%,
-    @color6 35%,
-    @color2 59%,
-    @color1 74%,
-    @surface0 100%
-  );
-  background-size: 400% 400%;
-  animation: gradient_f 4s ease infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
-  font-weight: bold;
-  color: @foreground;
-}
-
-#custom-music.critical {
-  background: linear-gradient(
-    52deg,
-    @surface0 0%,
-    @color5 30%,
-    @surface3 48%,
-    @color2 77%,
-    @surface0 100%
-  );
-  background-size: 300% 300%;
-  animation: gradient 15s cubic-bezier(0.55, -0.68, 0.48, 1.68) infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
-  font-weight: bold;
-  color: @foreground;
-}
-
-#custom-music.Playing {
-  background: radial-gradient(
-    circle,
-    @surface0 0%,
-    @color5 6%,
-    @surface0 14%,
-    @color3 28%,
-    @color2 58%,
-    @color1 69%,
-    @surface0 100%
-  );
-  background-size: 400% 400%;
-  animation: gradient_f 9s cubic-bezier(0.72, 0.39, 0.21, 1) infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
-  font-weight: bold;
-  color: @foreground;
-}
-
-#custom-music.Paused,
-#custom-music.Stopped {
-  background: @surface0;
-} */
-
 /* =============================== */
 /* Music/PlayerCTL Module */
 #custom-music {
-    color: @mauve;
-    padding: 0 20px 0 15px;
+  color: @mauve;
+  padding: 0 20px 0 15px;
 }
 
 /* =============================== */
@@ -458,27 +383,27 @@
 /* =============================== */
 /* Network Module */
 #network {
-    color: @blue;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-right: 0px;
-    padding-left: 0.8rem;
-    padding-right: 5px;
+  color: @blue;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0px;
+  padding-left: 0.8rem;
+  padding-right: 5px;
 }
 
 #power-profiles-daemon {
-    color: @green;
-    border-radius: 0;
-    margin-right: 0px;
-    padding-left: 5px;
-    padding-right: 0.8rem;
+  color: @green;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 0.8rem;
 }
 
 #bluetooth {
-    color: @blue;
-    border-radius: 0;
-    margin-right: 0px;
-    padding-left: 5px;
+  color: @blue;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
 }
 
 /* =============================== */
@@ -486,10 +411,10 @@
 /* =============================== */
 /* PulseAudio Module */
 #pulseaudio {
-    color: @mauve;
-    border-radius: 0;
-    margin-right: 0px;
-    padding-left: 5px;
+  color: @mauve;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
 }
 
 /* =============================== */
@@ -497,62 +422,61 @@
 /* =============================== */
 /* Battery Module */
 #battery {
-    color: @green;
-    border-radius: 0;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    padding-left: 5px;
-    padding-right: 0.8rem;
+  color: @green;
+  border-radius: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding-left: 5px;
+  padding-right: 0.8rem;
 }
 
 #battery.charging {
-    color: @green;
+  color: @green;
 }
 
 #battery.warning:not(.charging) {
-    color: @maroon;
+  color: @maroon;
 }
 
 #battery.critical:not(.charging) {
-    color: @red;
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  color: @red;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes blink {
-    to {
-        background: @red;
-        color: @surface1;
-    }
+  to {
+    background: @red;
+    color: @surface1;
+  }
 }
 
 /* Tray Module */
 #tray {
-    color: @mauve;
-    padding: 0 20px 0 15px;
+  color: @mauve;
+  padding: 0 20px 0 15px;
 }
 
 /* Powermenu Module */
 #custom-power {
-    color: @mauve;
-    padding: 0 20px 0 15px;
+  color: @mauve;
+  padding: 0 20px 0 15px;
 }
 
 /* =============================== */
 /* Launcher Module */
 #custom-launcher {
-    color: @blue;
-    padding: 0 20px 0 15px;
-    font-size: 20px;
+  color: @blue;
+  padding: 0 20px 0 15px;
+  font-size: 20px;
 }
-
 
 /* =============================== */
 
 #custom-notification {
-    color: @mauve;
-    padding: 0 20px 0 15px;
+  color: @mauve;
+  padding: 0 20px 0 15px;
 }
