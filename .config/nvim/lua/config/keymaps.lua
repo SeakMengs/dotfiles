@@ -12,3 +12,13 @@ keymap("n", "<leader>ac", "<cmd>Copilot disable<cr>", { desc = " Disable (Copilo
 
 -- Save the file with Ctrl+S in insert mode then exit to normal mode
 keymap("i", "<C-s>", "<Esc>:w<CR>", { noremap = true, silent = true })
+
+-- Auto wrap selected text with a tag
+function WrapWithTag()
+  local tag = vim.fn.input("Enter tag: ")
+  if tag ~= "" then
+    vim.cmd("normal! `<i<" .. tag .. ">")
+    vim.cmd("normal! `>a</" .. tag .. ">")
+  end
+end
+keymap("v", "<M-w>", ":<C-u>lua WrapWithTag()<CR>", { noremap = true, silent = true })

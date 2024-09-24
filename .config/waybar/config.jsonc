@@ -103,7 +103,9 @@
     "interval": 2,
   },
   "custom/music": {
-    "format": "{icon} {}",
+    // https://github.com/Alexays/Waybar/issues/3623#issuecomment-2357239438
+    "format": "{icon} {0}",
+    // "format": "{0}",
     "format-icons": {
       "Playing": " ", // Uncomment if not using the dynamic script
       "Paused": " ",
