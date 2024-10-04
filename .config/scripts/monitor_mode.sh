@@ -24,9 +24,9 @@ update_mkinitcpio_modules() {
   mkinitcpio_content=$(cat $SYSTEM_MKINITCPIO_CONFIG)
 
   if [[ $mode == "external" ]]; then
-    # modules_to_add="nvidia nvidia_modeset nvidia_uvm nvidia_drm"
+    modules_to_add="nvidia nvidia_modeset nvidia_uvm nvidia_drm"
     # Because hibernation, removing these module would still work the same and allow me to use hibernation
-    modules_to_add=""
+    # modules_to_add=""
     modules_to_remove="nouveau"
   elif [[ $mode == "internal" ]]; then
     modules_to_add="nouveau"
