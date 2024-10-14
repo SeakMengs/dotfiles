@@ -11,10 +11,27 @@ services:
       # host port: mysql tcp port
       - "3306:3306"
     volumes:
-      # Mount database data so that even if the container got deleted, the volum would still be there unless delted by us
-      - dbdata:/var/lib/mysql
-      # set a file as a container initialization script, which will run upon container creation.
+      # Mount database data so that even if the container got deleted, the volume would still be there unless deleted by us
+      - mysql_dbdata:/var/lib/mysql
+      # Uncomment below if you want to use an initialization script
+      # - "./<your_sql_file_name_here>.sql:/docker-entrypoint-initdb.d/1.sql"
+
+  db_postgres:
+    container_name: "local_dev_postgres"
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: example
+    ports:
+      # host port: postgres tcp port
+      - "5432:5432"
+    volumes:
+      # Mount database data so that even if the container got deleted, the volume would still be there unless deleted by us
+      - postgres_dbdata:/var/lib/postgresql/data
+      # Uncomment below if you want to use an initialization script
       # - "./<your_sql_file_name_here>.sql:/docker-entrypoint-initdb.d/1.sql"
 
 volumes:
-  dbdata:
+  mysql_dbdata:
+  postgres_dbdata:

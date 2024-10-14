@@ -50,11 +50,11 @@ sudo pacman -S git hyprland kitty dolphin thunar waybar stow nvim hyprpaper zsh 
 btrfs-assistant pipewire pipewire-alsa alsa-utils pipewire-pulse pavucontrol sof-firmware \
 ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
 gwenview bluez bluez-utils blueman swaync okular qt5ct qt6ct kvantum arc-gtk cliphist \
-dunst lazygit
+dunst lazygit wine wine-mono wine-gecko
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox
+yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox winegui
 ```
 
 # Installation
