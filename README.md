@@ -54,7 +54,7 @@ dunst lazygit wine wine-mono wine-gecko
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox winegui
+yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox winegui bibata-cursor-theme-bin
 ```
 
 # Installation
