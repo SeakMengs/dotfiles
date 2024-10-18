@@ -1,8 +1,8 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-left": 10,
-  "margin-right": 10,
+  // "margin-left": 10,
+  // "margin-right": 10,
   // reloading the css style if a modification is detected on the style sheet file or any imported css files.
   "reload_style_on_change": true,
   "modules-left": [
@@ -34,11 +34,21 @@
     "on-click-right": "hyprpicker -a",
   },
   "hyprland/workspaces": {
-    "format": "{name}",
-    // "format": "{icon} {name}",
+    // "format": "{name}",
+    "format": "{icon}",
     "format-icons": {
-      "active": "",
-      "default": "",
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+      // "active": "",
+      // "default": "",
     },
     "on-scroll-up": "hyprctl dispatch workspace e-1",
     "on-scroll-down": "hyprctl dispatch workspace e+1",
