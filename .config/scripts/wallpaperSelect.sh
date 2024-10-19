@@ -4,6 +4,7 @@
 # Wallpapers Path
 wallpaperDir="$HOME/.config/hypr/wallpapers"
 rofiTheme="$HOME/.config/rofi/wallpapers/wallpaper_select.rasi"
+scriptPath="$HOME/.config/scripts"
 
 # Transition config
 FPS=60
@@ -48,7 +49,7 @@ executeCommand() {
 
   # update pywal, waybar, swaync
   if command -v wal &>/dev/null; then
-    wal -i "$1"
+    wal -i "$1" && "${scriptPath}/pywal_cava.sh"
   fi
 
   if command -v pywalfox &>/dev/null; then

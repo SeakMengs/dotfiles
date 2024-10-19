@@ -33,13 +33,9 @@ The dotfiles are managed using `GNU Stow`, there is a scripts in the `.config/sc
 
 # Screenshots
 
-![Screenshot 1](screenshots/v1/1_screenshot_v1.png)
+![Screenshot 1](screenshots/v2/1_screenshot_v2.png)
 
-![Screenshot 2](screenshots/v1/2_screenshot_v1.png)
-
-![Screenshot 3](screenshots/v1/3_screenshot_v1.png)
-
-![Screenshot 4](screenshots/v1/4_screenshot_v1.png)
+![Screenshot 2](screenshots/v2/2_screenshot_v2.png)
 
 # Requirements
 
