@@ -27,11 +27,11 @@
 @define-color sapphire @text;
 @define-color sky @text;
 @define-color teal @text;
-@define-color green @text;
+@define-color green #a6e3a1;
 @define-color yellow @text;
 @define-color peach @text;
-@define-color maroon @text;
-@define-color red @text;
+@define-color maroon #eba0ac;
+@define-color red #f38ba8;
 @define-color mauve @text;
 @define-color pink @text;
 @define-color flamingo @text;
@@ -121,19 +121,19 @@
 #bluetooth,
 #custom-music,
 #custom-notification,
+#custom-separator-line,
 #custom-power {
   color: @text;
-  padding: 0.1rem 0.1rem;
+  padding: 0.1rem 0.5rem;
 }
 
 /* =============================== */
 #workspaces {
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 #workspaces button {
   background: none;
+  margin-bottom: 0.4rem;
 }
 
 #workspaces button.active,
@@ -152,35 +152,16 @@
 }
 
 #cpu {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-right: 0px;
-  padding-right: 5px;
-  padding-left: 0.8rem;
 }
 
 #memory {
-  border-radius: 0px;
-  margin-right: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 #temperature {
-  border-radius: 0px;
-  /*border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;*/
-  margin-right: 0px;
-  padding-left: 5px;
-  padding-right: 10px;
 }
 
 #disk {
   color: @peach;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  padding-left: 5px;
-  padding-right: 0.8rem;
 }
 
 /* =============================== */
@@ -189,8 +170,6 @@
 /* Clock Module */
 #clock {
   color: @flamingo;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
 }
 
 /* =============================== */
@@ -285,7 +264,6 @@
 /* Music/PlayerCTL Module */
 #custom-music {
   color: @mauve;
-  padding: 0 20px 0 15px;
 }
 
 /* =============================== */
@@ -294,26 +272,14 @@
 /* Network Module */
 #network {
   color: @blue;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-right: 0px;
-  padding-left: 0.8rem;
-  padding-right: 5px;
 }
 
 #power-profiles-daemon {
-  color: @green;
-  border-radius: 0;
-  margin-right: 0px;
-  padding-left: 5px;
-  padding-right: 0.8rem;
+  color: @mauve;
 }
 
 #bluetooth {
   color: @blue;
-  border-radius: 0;
-  margin-right: 0px;
-  padding-left: 5px;
 }
 
 /* =============================== */
@@ -322,9 +288,6 @@
 /* PulseAudio Module */
 #pulseaudio {
   color: @mauve;
-  border-radius: 0;
-  margin-right: 0px;
-  padding-left: 5px;
 }
 
 /* =============================== */
@@ -332,12 +295,7 @@
 /* =============================== */
 /* Battery Module */
 #battery {
-  color: @green;
-  border-radius: 0;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-  padding-left: 5px;
-  padding-right: 0.8rem;
+  color: @mauve;
 }
 
 #battery.charging {
@@ -367,26 +325,24 @@
 /* Tray Module */
 #tray {
   color: @mauve;
-  padding: 0 20px 0 15px;
 }
 
 /* Powermenu Module */
 #custom-power {
   color: @mauve;
-  padding: 0 20px 0 15px;
+  margin-right: 1rem;
 }
 
 /* =============================== */
 /* Launcher Module */
 #custom-launcher {
   color: @blue;
-  padding: 0 20px 0 15px;
-  font-size: 20px;
+  font-size: 18px;
+  margin-left: 1rem;
 }
 
 /* =============================== */
 
 #custom-notification {
   color: @mauve;
-  padding: 0 20px 0 15px;
 }
