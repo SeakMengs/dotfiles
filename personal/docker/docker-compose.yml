@@ -3,7 +3,7 @@ services:
   db_mysql:
     container_name: "local_dev_mysql"
     image: mysql
-    restart: always
+    # restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_TCP_PORT: 3306
@@ -19,7 +19,7 @@ services:
   db_postgres:
     container_name: "local_dev_postgres"
     image: postgres
-    restart: always
+    # restart: always
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: example
