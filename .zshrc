@@ -67,3 +67,6 @@ fastfetch --config examples/8
 
 # Path
 PATH=~/.console-ninja/.bin:$PATH
+
+# Environment variable
+export ANDROID_HOME=~/Android/Sdk/
