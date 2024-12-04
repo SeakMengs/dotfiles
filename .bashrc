@@ -23,3 +23,5 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Environment variable
 export ANDROID_HOME=~/Android/Sdk/
+
+# source /usr/share/nvm/init-nvm.sh
