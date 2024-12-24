@@ -239,9 +239,10 @@ The main modifier key is set to `SUPER` (Windows key).
 
 ### Discord
 
-| Keybind    | Action                 |
-| ---------- | ---------------------- |
-| `SHIFT+F6` | Toggle mute in Discord |
+| Keybind    | Action                   |
+| ---------- | ------------------------ |
+| `SHIFT+F6` | Toggle mute in Discord   |
+| `SHIFT+F5` | Toggle defean in Discord |
 
 # Inspiration and Credits
 
