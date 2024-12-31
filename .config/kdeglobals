@@ -135,6 +135,13 @@ ForegroundVisited=155,89,182
 [General]
 ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
 TerminalApplication=kitty
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=JetBrainsMono Nerd Font Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
@@ -165,6 +172,7 @@ Dialog Size=600,480
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
+activeFont=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177
