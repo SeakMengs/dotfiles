@@ -132,6 +132,10 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
+[DirSelect Dialog]
+DirSelectDialog Size=1010,1107
+History Items[$e]=file:$HOME/projects/AutoCert/web,file:$HOME/projects/file-sync/docs/bruno
+
 [General]
 ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257
 TerminalApplication=kitty
@@ -149,7 +153,7 @@ LookAndFeelPackage=org.kde.breezedark.desktop
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
