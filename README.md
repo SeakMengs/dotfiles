@@ -33,9 +33,11 @@ The dotfiles are managed using `GNU Stow`, there is a scripts in the `.config/sc
 
 # Screenshots
 
-![Screenshot 1](screenshots/v2/1_screenshot_v2.png)
+![Screenshot 1](screenshots/v2/1_screenshot.png)
 
-![Screenshot 2](screenshots/v2/2_screenshot_v2.png)
+![Screenshot 2](screenshots/v2/2_screenshot.png)
+
+![Screenshot 3](screenshots/v2/3_screenshot.png)
 
 # Requirements
 
@@ -250,3 +252,4 @@ The main modifier key is set to `SUPER` (Windows key).
 - [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
 - [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
 - [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
+- [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
