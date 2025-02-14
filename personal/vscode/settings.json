@@ -1,11 +1,11 @@
 {
     "code-runner.runInTerminal": true,
     "code-runner.saveAllFilesBeforeRun": true,
-    "workbench.iconTheme": "catppuccin-perfect-mocha",
+    "workbench.iconTheme": "material-icon-theme",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": false,
-        "plaintext": false,
+        "plaintext": true,
         "markdown": true,
         "scminput": false,
         "yaml": true,
@@ -20,14 +20,16 @@
         "typescriptreact": true,
         "properties": true,
         "sql": true,
-        "go": false,
+        "go": true,
         "dart": true,
         "json": true,
         "shellscript": true,
         "blade": true,
         "vue": true,
         "lua": true,
-        "postcss": true
+        "postcss": true,
+        "dockerfile": true,
+        "dockercompose": true
     },
     "html.format.contentUnformatted": "",
     "[html]": {
@@ -144,14 +146,14 @@
     "diffEditor.ignoreTrimWhitespace": false,
     // Change Font
     // "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, CaskaydiaCove Nerd Font Mono",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, CaskaydiaCove Nerd Font Mono",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "JetBrainsMono Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
     "editor.fontWeight": "normal",
     "editor.fontLigatures": false,
 
-    "workbench.colorTheme": "Material Theme Ocean",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "material-icon-theme.folders.theme": "specific",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
@@ -516,5 +518,16 @@
         "editor.defaultFormatter": "golang.go"
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[properties]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "update.mode": "manual",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }

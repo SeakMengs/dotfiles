@@ -20,16 +20,16 @@ general.import = ["~/.cache/wal/colors-alacritty.toml"]
 size = 12.0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font Mono"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font Mono"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font Mono"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font Mono"
 
 # Keybinds
 [keyboard]

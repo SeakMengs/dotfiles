@@ -253,3 +253,4 @@ The main modifier key is set to `SUPER` (Windows key).
 - [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
 - [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
 - [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
+
