@@ -140,8 +140,8 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+T`     | Toggle floating mode for the active window         |
 | `SUPER+Space` | Open Rofi application launcher                     |
 | `SUPER+F`     | Toggle fullscreen for the active window            |
-| `SUPER+P`     | Toggle pseudo mode (e.g., dwindle)                 |
-| `SUPER+J`     | Toggle split layout (e.g., dwindle)                |
+| `SUPER+P`     | Toggle pseudo mode                                 |
+| `SUPER+J`     | Toggle split layout                                |
 | `SUPER+W`     | Open rofi menu to select wallpapers                |
 | `SUPER+.`     | Open emoji picker (`Smile`)                        |
 | `SUPER+F4`    | Open logout menu (`wlogout`)                       |
@@ -253,4 +253,3 @@ The main modifier key is set to `SUPER` (Windows key).
 - [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
 - [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
 - [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
-
