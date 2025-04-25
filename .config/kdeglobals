@@ -133,8 +133,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=1248,756
-History Items[$e]=file:$HOME/projects/Radi,file:$HOME/projects/AutoCert/web,file:$HOME/projects/file-sync/docs/bruno
+DirSelectDialog Size=946,510
 
 [General]
 ColorSchemeHash=8d483e98b770fbeba364db371382301dbfc92748
