@@ -85,7 +85,7 @@
         },
         {
           "label": "󰏘",
-          "command": "nwg-look"
+          "command": "$HOME/.config/scripts/wallpaperSelect.sh"
         },
         {
           "label": "",

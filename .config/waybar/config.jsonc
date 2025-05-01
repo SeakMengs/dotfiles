@@ -38,7 +38,8 @@
     "tooltip": true,
     "exec": "echo '{\"text\":\"󰣇\",\"tooltip\":\"I use Arch btw\"}'",
     "return-type": "json",
-    "on-click": "$HOME/.config/scripts/wallpaperSelect.sh",
+    // "on-click": "$HOME/.config/scripts/wallpaperSelect.sh",
+    "on-click": "sleep 0.2 && hyprctl dispatch hyprexpo:expo open",
     "on-click-right": "hyprpicker -a",
   },
   "hyprland/workspaces": {
