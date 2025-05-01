@@ -8,7 +8,7 @@ local keymap = vim.api.nvim_set_keymap
 -- vim.keymap.set("n", "<C-n>", "<cmd>Neotree toggle<cr>", { desc = "Toggle NeoTree" })
 
 keymap("n", "<leader>ae", "<cmd>Copilot enable<cr>", { desc = " Enable (Copilot)" })
-keymap("n", "<leader>ac", "<cmd>Copilot disable<cr>", { desc = " Disable (Copilot)" })
+keymap("n", "<leader>ad", "<cmd>Copilot disable<cr>", { desc = " Disable (Copilot)" })
 
 -- Save the file with Ctrl+S in insert mode then exit to normal mode
 keymap("i", "<C-s>", "<Esc>:w<CR>", { noremap = true, silent = true })

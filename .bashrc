@@ -19,9 +19,4 @@ alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
 eval "$(oh-my-posh init bash --config ~/.config/ohmyposh/pure.omp.json)"
 fastfetch --config examples/8
 
-PATH=~/.console-ninja/.bin:$PATH
-
-# Environment variable
-export ANDROID_HOME=~/Android/Sdk/
-
 # source /usr/share/nvm/init-nvm.sh

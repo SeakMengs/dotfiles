@@ -65,12 +65,6 @@ eval "$(fzf --zsh)"
 eval $(thefuck --alias)
 fastfetch --config examples/8
 
-# Path
-PATH=~/.console-ninja/.bin:$PATH
-
-# Environment variable
-export ANDROID_HOME=~/Android/Sdk/
-
 # source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Loads nvm
