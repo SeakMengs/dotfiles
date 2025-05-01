@@ -1,30 +1,32 @@
 # Table of Contents
 
-- [Introduction](#introduction)
-- [Screenshots](#screenshots)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Post Installation](#post-installation)
-  - [Zsh](#zsh)
-  - [Give Permission to scripts](#give-permission-to-scripts)
-  - [Enable hypridle](#enable-hypridle)
-- [Programs](#programs)
-- [Keybindings](#keybindings)
-  - [Screenshot Keybinds](#screenshot-keybinds)
-  - [General Keybinds](#general-keybinds)
-  - [Workspace Navigation](#workspace-navigation)
-    - [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
-    - [Switch Workspaces](#switch-workspaces)
-    - [Move Active Window to Workspace](#move-active-window-to-workspace)
-  - [Special Workspaces](#special-workspaces)
-  - [Workspace Scroll](#workspace-scroll)
-  - [Window Management](#window-management)
-  - [Audio Controls](#audio-controls)
-  - [Brightness Controls](#brightness-controls)
-  - [Global Keybinds](#global-keybinds)
-    - [OBS](#obs)
-    - [Discord](#discord)
-- [Inspiration and Credits](#inspiration-and-credits)
+-   [Introduction](#introduction)
+-   [Screenshots](#screenshots)
+-   [Requirements](#requirements)
+-   [Installation](#installation)
+-   [Post Installation](#post-installation)
+    -   [Zsh](#zsh)
+    -   [Give Permission to scripts](#give-permission-to-scripts)
+    -   [Enable hypridle](#enable-hypridle)
+    -   [Plugins](#plugins)
+-   [Programs](#programs)
+-   [Keybindings](#keybindings)
+    -   [Screenshot Keybinds](#screenshot-keybinds)
+    -   [General Keybinds](#general-keybinds)
+    -   [Workspace Navigation](#workspace-navigation)
+        -   [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
+        -   [Switch Workspaces](#switch-workspaces)
+        -   [Move Active Window to Workspace](#move-active-window-to-workspace)
+        -   [Special Workspaces](#special-workspaces)
+        -   [Workspace Scroll](#workspace-scroll)
+        -   [Grid View Workspace](#grid-view-workspace)
+    -   [Window Management](#window-management)
+    -   [Audio Controls](#audio-controls)
+    -   [Brightness Controls](#brightness-controls)
+    -   [Global Keybinds](#global-keybinds)
+        -   [OBS](#obs)
+        -   [Discord](#discord)
+-   [Inspiration and Credits](#inspiration-and-credits)
 
 # Introduction
 
@@ -38,6 +40,8 @@ The dotfiles are managed using `GNU Stow`, there is a scripts in the `.config/sc
 ![Screenshot 2](screenshots/v2/2_screenshot.png)
 
 ![Screenshot 3](screenshots/v2/3_screenshot.png)
+
+![Screenshot 4](screenshots/v2/4_screenshot.png)
 
 # Requirements
 
@@ -104,18 +108,29 @@ chmod +x ~/.config/scripts/*
 systemctl --user enable --now hypridle.service
 ```
 
+## Plugins
+
+Install and enable Hyprland plugins:
+
+```
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm update
+hyprpm enable hyprexpo
+hyprpm reload -nn
+```
+
 # Programs
 
-- **Window Manager**: [Hyprland](https://hyprland.org)
-- **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
-- **File Manager**: [Dolphin](https://apps.kde.org/dolphin/)
-- **Bar**: [Waybar](https://github.com/Alexays/Waybar)
-- **Launcher**: [Rofi](https://github.com/davatorium/rofi)
-- **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
-- **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
-- **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
-- **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
-- **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
+-   **Window Manager**: [Hyprland](https://hyprland.org)
+-   **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
+-   **File Manager**: [Dolphin](https://apps.kde.org/dolphin/)
+-   **Bar**: [Waybar](https://github.com/Alexays/Waybar)
+-   **Launcher**: [Rofi](https://github.com/davatorium/rofi)
+-   **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
+-   **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
+-   **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+-   **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
+-   **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
 
 # Keybindings
 
@@ -187,19 +202,25 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+SHIFT+9` | Move active window to workspace 9  |
 | `SUPER+SHIFT+0` | Move active window to workspace 10 |
 
-## Special Workspaces
+### Special Workspace
 
 | Keybind         | Action                                  |
 | --------------- | --------------------------------------- |
 | `SUPER+A`       | Toggle special workspace                |
 | `SUPER+SHIFT+A` | Move active window to special workspace |
 
-## Workspace Scroll
+### Workspace Scroll
 
 | Keybind            | Action                           |
 | ------------------ | -------------------------------- |
 | `SUPER+Mouse Down` | Scroll to the next workspace     |
 | `SUPER+Mouse Up`   | Scroll to the previous workspace |
+
+### Grid View Workspace
+
+| Keybind     | Action                                    |
+| ----------- | ----------------------------------------- |
+| `SUPER+TAB` | Toggle workspaces view as grid (hyprexpo) |
 
 ## Window Management
 
@@ -248,8 +269,8 @@ The main modifier key is set to `SUPER` (Windows key).
 
 # Inspiration and Credits
 
-- [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
-- [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
-- [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
-- [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
-- [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
+-   [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
+-   [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
+-   [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
+-   [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
+-   [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
