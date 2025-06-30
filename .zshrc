@@ -1,3 +1,7 @@
+# Execute when terminal open
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/pure.omp.json)"
+fastfetch --config examples/8
+
 # Created by newuser for 5.9
 # Credit: https://github.com/dreamsofautonomy/zensh/blob/main/.zshrc
 
@@ -60,10 +64,8 @@ alias syncdot="$HOME/.config/scripts/syncdot.sh"
 alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
 
 # Execute when terminal open
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/pure.omp.json)"
 eval "$(fzf --zsh)"
 eval $(thefuck --alias)
-fastfetch --config examples/8
 
 # source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"

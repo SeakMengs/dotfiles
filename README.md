@@ -1,32 +1,35 @@
 # Table of Contents
 
--   [Introduction](#introduction)
--   [Screenshots](#screenshots)
--   [Requirements](#requirements)
--   [Installation](#installation)
--   [Post Installation](#post-installation)
-    -   [Zsh](#zsh)
-    -   [Give Permission to scripts](#give-permission-to-scripts)
-    -   [Enable hypridle](#enable-hypridle)
-    -   [Plugins](#plugins)
--   [Programs](#programs)
--   [Keybindings](#keybindings)
-    -   [Screenshot Keybinds](#screenshot-keybinds)
-    -   [General Keybinds](#general-keybinds)
-    -   [Workspace Navigation](#workspace-navigation)
-        -   [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
-        -   [Switch Workspaces](#switch-workspaces)
-        -   [Move Active Window to Workspace](#move-active-window-to-workspace)
-        -   [Special Workspaces](#special-workspaces)
-        -   [Workspace Scroll](#workspace-scroll)
-        -   [Grid View Workspace](#grid-view-workspace)
-    -   [Window Management](#window-management)
-    -   [Audio Controls](#audio-controls)
-    -   [Brightness Controls](#brightness-controls)
-    -   [Global Keybinds](#global-keybinds)
-        -   [OBS](#obs)
-        -   [Discord](#discord)
--   [Inspiration and Credits](#inspiration-and-credits)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Screenshots](#screenshots)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Post Installation](#post-installation)
+  - [Zsh](#zsh)
+  - [Give Permission to scripts](#give-permission-to-scripts)
+  - [Enable hypridle](#enable-hypridle)
+  - [Plugins](#plugins)
+- [Programs](#programs)
+- [Keybindings](#keybindings)
+  - [Screenshot Keybinds](#screenshot-keybinds)
+  - [General Keybinds](#general-keybinds)
+  - [Workspace Navigation](#workspace-navigation)
+    - [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
+    - [Switch Workspaces](#switch-workspaces)
+    - [Move Active Window to Workspace](#move-active-window-to-workspace)
+    - [Special Workspace](#special-workspace)
+    - [Workspace Scroll](#workspace-scroll)
+    - [Grid View Workspace](#grid-view-workspace)
+  - [Window Management](#window-management)
+    - [Move & Swap Windows](#move-swap-windows)
+    - [Resize Windows](#resize-windows)
+  - [Audio Controls](#audio-controls)
+  - [Brightness Controls](#brightness-controls)
+  - [Global Keybinds](#global-keybinds)
+    - [OBS](#obs)
+    - [Discord](#discord)
+- [Inspiration and Credits](#inspiration-and-credits)
 
 # Introduction
 
@@ -121,16 +124,16 @@ hyprpm reload -nn
 
 # Programs
 
--   **Window Manager**: [Hyprland](https://hyprland.org)
--   **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
--   **File Manager**: [Dolphin](https://apps.kde.org/dolphin/)
--   **Bar**: [Waybar](https://github.com/Alexays/Waybar)
--   **Launcher**: [Rofi](https://github.com/davatorium/rofi)
--   **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
--   **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
--   **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
--   **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
--   **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
+- **Window Manager**: [Hyprland](https://hyprland.org)
+- **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
+- **File Manager**: [Dolphin](https://apps.kde.org/dolphin/)
+- **Bar**: [Waybar](https://github.com/Alexays/Waybar)
+- **Launcher**: [Rofi](https://github.com/davatorium/rofi)
+- **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
+- **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
+- **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
+- **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
+- **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
 
 # Keybindings
 
@@ -224,9 +227,20 @@ The main modifier key is set to `SUPER` (Windows key).
 
 ## Window Management
 
+### Move & Swap Windows
+
+| Keybind                   | Action                                |
+| ------------------------- | ------------------------------------- |
+| `SUPER+Left Mouse Button` | Move window                           |
+| `SUPER+CTRL+Left`         | Swap window with the one to the left  |
+| `SUPER+CTRL+Right`        | Swap window with the one to the right |
+| `SUPER+CTRL+Up`           | Swap window with the one above        |
+| `SUPER+CTRL+Down`         | Swap window with the one below        |
+
+### Resize Windows
+
 | Keybind                    | Action                                  |
 | -------------------------- | --------------------------------------- |
-| `SUPER+Left Mouse Button`  | Move window                             |
 | `SUPER+Right Mouse Button` | Resize window                           |
 | `SUPER+SHIFT+Right`        | Resize active window right by 20 pixels |
 | `SUPER+SHIFT+Left`         | Resize active window left by 20 pixels  |
@@ -269,8 +283,8 @@ The main modifier key is set to `SUPER` (Windows key).
 
 # Inspiration and Credits
 
--   [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
--   [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
--   [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
--   [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
--   [HyDE-Project](https://github.com/Hyde-project/hyde) for animations
+- [adi1090x](https://github.com/adi1090x/rofi) for the rofi themes
+- [rchrdwllm](https://github.com/rchrdwllm/dotfiles) for inspiration
+- [zDyanTB](https://github.com/zDyanTB/HyprNova) for inspiration
+- [PROxZIMA](https://github.com/PROxZIMA/caway) for the waybar cava music module
+- [HyDE-Project](https://github.com/Hyde-project/hyde) for animations

@@ -16,7 +16,7 @@
     "disk",
     "custom/separator-line",
   ],
-  "modules-center": ["custom/music"],
+  // "modules-center": ["custom/music"],
   "modules-right": [
     "custom/separator-line",
     "network",
