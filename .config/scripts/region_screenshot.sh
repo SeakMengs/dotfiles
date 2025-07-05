@@ -17,7 +17,7 @@ SAVE_PATH="$SAVE_DIR/$FILENAME"
 grimblast --freeze copysave area "$SAVE_PATH"
 
 if [ $? -eq 0 ]; then
-  notify-send "Screenshot Taken" "Saved to $SAVE_PATH"
+  notify-send "Screenshot Taken" "Saved to $SAVE_PATH."
 else
-  notify-send "Screenshot Failed" "Could not take screenshot"
+  notify-send "Screenshot Cancel" "Screenshot was cancelled or failed."
 fi

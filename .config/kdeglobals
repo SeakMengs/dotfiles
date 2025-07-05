@@ -22,7 +22,7 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=30,87,116
-BackgroundNormal=49,54,59
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -36,7 +36,7 @@ ForegroundVisited=155,89,182
 
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
-BackgroundNormal=42,46,50
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -49,8 +49,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -63,8 +63,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Header][Inactive]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -91,8 +91,8 @@ ForegroundPositive=23,104,57
 ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
-BackgroundAlternate=42,46,50
-BackgroundNormal=49,54,59
+BackgroundAlternate=32,35,38
+BackgroundNormal=41,44,48
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -105,8 +105,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:View]
-BackgroundAlternate=35,38,41
-BackgroundNormal=27,30,32
+BackgroundAlternate=29,31,34
+BackgroundNormal=20,22,24
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -119,8 +119,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Window]
-BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
+BackgroundAlternate=41,44,48
+BackgroundNormal=32,35,38
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -136,7 +136,7 @@ ForegroundVisited=155,89,182
 DirSelectDialog Size=946,510
 
 [General]
-ColorSchemeHash=98139d0bac64c4e9f97721675584832c7c7a0bf0
+ColorSchemeHash=8ff306d9a93379c74540e00506966df24df1798b
 TerminalApplication=kitty
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -173,10 +173,10 @@ View Style=DetailTree
 Dialog Size=600,480
 
 [WM]
-activeBackground=49,54,59
+activeBackground=39,44,49
 activeBlend=252,252,252
 activeFont=JetBrainsMono Nerd Font Mono,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=252,252,252
-inactiveBackground=42,46,50
+inactiveBackground=32,36,40
 inactiveBlend=161,169,177
 inactiveForeground=161,169,177
