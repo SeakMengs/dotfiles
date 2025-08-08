@@ -133,7 +133,9 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=946,510
+DirSelectDialog Size=946,1035
+History Items[$e]=file:$HOME/projects/CS313_TeamBossFight_Backend,file:$HOME/projects/CS313_TeamBossFight,file:$HOME/projects/OptiScheduling,file:$HOME/Downloads/test,file:$HOME/projects/GreenCup-V2/bruno,file:$HOME/projects/GreenCup-V2
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xd2\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
 ColorSchemeHash=8ff306d9a93379c74540e00506966df24df1798b
