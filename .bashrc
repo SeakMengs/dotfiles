@@ -20,3 +20,7 @@ eval "$(oh-my-posh init bash --config ~/.config/ohmyposh/pure.omp.json)"
 fastfetch --config examples/8
 
 # source /usr/share/nvm/init-nvm.sh
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/yato/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

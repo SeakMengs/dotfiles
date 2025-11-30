@@ -1,533 +1,534 @@
 {
-    "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": false,
-        "yaml": true,
-        "cpp": true,
-        "html": true,
-        "css": true,
-        "javascript": true,
-        "python": true,
-        "java": true,
-        "php": true,
-        "typescript": true,
-        "typescriptreact": true,
-        "properties": true,
-        "sql": true,
-        "go": true,
-        "dart": true,
-        "json": true,
-        "shellscript": true,
-        "blade": true,
-        "vue": true,
-        "lua": true,
-        "postcss": true,
-        "dockerfile": true,
-        "dockercompose": true
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "cpp": true,
+    "html": true,
+    "css": true,
+    "javascript": true,
+    "python": true,
+    "java": true,
+    "php": true,
+    "typescript": true,
+    "typescriptreact": true,
+    "properties": true,
+    "sql": true,
+    "go": true,
+    "dart": true,
+    "json": true,
+    "shellscript": true,
+    "blade": true,
+    "vue": true,
+    "lua": true,
+    "postcss": true,
+    "dockerfile": true,
+    "dockercompose": true
+  },
+  "html.format.contentUnformatted": "",
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.editor.enablePreview": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "html.format.contentUnformatted": "",
-    "[html]": {
-        "editor.formatOnSave": true
+    {
+      "tag": "?",
+      "color": "#b8214c",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    "workbench.editor.enablePreview": false,
-    "better-comments.tags": [
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.port": 5500,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.guides.bracketPairs": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.wordWrapColumn": 79,
+    "editor.wordWrap": "off",
+    "editor.formatOnType": true
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "svelte.enable-ts-plugin": true,
+  "editor.linkedEditing": true,
+  "editor.accessibilitySupport": "off",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "cSpell.dictionaryDefinitions": [],
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+  },
+  "errorLens.followCursor": "activeLine",
+  "errorLens.messageBackgroundMode": "message",
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.env.linux": {},
+  "cSpell.userWords": ["myinit", "tauri"],
+  "git.enableCommitSigning": true,
+  "console-ninja.featureSet": "Community",
+  "python.autoComplete.extraPaths": [],
+  "python.analysis.extraPaths": [],
+  "editor.inlineSuggest.showToolbar": "always",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Change Font
+  // "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, CaskaydiaCove Nerd Font Mono",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": false,
+
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "material-icon-theme.folders.theme": "specific",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // APC Settings
+  "apc.activityBar": {
+    "position": "bottom",
+    "size": 28
+  },
+  // make activity bar to the bottom same as the status bar
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 28,
+    "fontSize": 12
+  },
+  // Make window transparent
+  // "apc.electron": {
+  //   "frame": false,
+  //   "titleBarStyle": "hiddenInset",
+  //   "transparent": true,
+  //   "vibrancy": "ultra-dark",
+  //   "opacity": 0.98,
+  //   "visualEffectState": "active",
+  // },
+
+  // apply the font family to the editor
+  "apc.font.family": "JetBrainsMono Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
+  "apc.monospace.font.family": "Geist Mono",
+
+  // formatter Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 4,
+
+  "whichkey.sortOrder": "alphabetically",
+  "whichkey.delay": 0,
+  "whichkey.bindings": [
+    {
+      "key": "w",
+      "name": "Save file",
+      "type": "command",
+      "command": "workbench.action.files.save"
+    },
+    {
+      "key": "q",
+      "name": "Close file",
+      "type": "command",
+      "command": "workbench.action.closeActiveEditor"
+    },
+    {
+      "key": ";",
+      "name": "commands",
+      "type": "command",
+      "command": "workbench.action.showCommands"
+    },
+    {
+      "key": "e",
+      "name": "Activity Bar",
+      "type": "command",
+      "bindings": [
         {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
+          "key": "e",
+          "name": "Explorer",
+          "type": "command",
+          "command": "workbench.view.explorer"
         },
         {
-            "tag": "?",
-            "color": "#b8214c",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
+          "key": "f",
+          "name": "Search",
+          "type": "command",
+          "command": "workbench.view.search"
         },
         {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
+          "key": "x",
+          "name": "Extensions",
+          "type": "command",
+          "command": "workbench.view.extensions"
         },
         {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
+          "key": "s",
+          "name": "Toggle sidebar visibility",
+          "type": "command",
+          "command": "workbench.action.toggleSidebarVisibility"
         },
         {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
+          "key": "c",
+          "name": "Collapse folders in Explorer",
+          "type": "command",
+          "command": "workbench.files.action.collapseExplorerFolders"
         }
-    ],
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "liveServer.settings.host": "localhost",
-    "liveServer.settings.ChromeDebuggingAttachment": false,
-    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
-    "liveServer.settings.port": 5500,
-    "security.workspace.trust.untrustedFiles": "open",
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [80],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": "off"
+      ]
     },
-    "editor.guides.bracketPairs": true,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8",
-        "editor.wordWrapColumn": 79,
-        "editor.wordWrap": "off",
-        "editor.formatOnType": true
-    },
-    "svelte.plugin.svelte.note-new-transformation": false,
-    "svelte.enable-ts-plugin": true,
-    "editor.linkedEditing": true,
-    "editor.accessibilitySupport": "off",
-    "editor.quickSuggestions": {
-        "strings": "on"
-    },
-    "css.lint.unknownAtRules": "ignore",
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-    "cSpell.dictionaryDefinitions": [],
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[sql]": {
-        "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
-    },
-    "errorLens.followCursor": "activeLine",
-    "errorLens.messageBackgroundMode": "message",
-    "[scss]": {
-        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-    },
-    "terminal.integrated.env.windows": {},
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.env.linux": {},
-    "cSpell.userWords": ["myinit", "tauri"],
-    "git.enableCommitSigning": true,
-    "console-ninja.featureSet": "Community",
-    "python.autoComplete.extraPaths": [],
-    "python.analysis.extraPaths": [],
-    "editor.inlineSuggest.showToolbar": "always",
-    "gopls": {
-        "ui.semanticTokens": true
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    // Change Font
-    // "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, CaskaydiaCove Nerd Font Mono",
-    "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "normal",
-    "editor.fontLigatures": false,
-
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "material-icon-theme.folders.theme": "specific",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "editor.stickyScroll.enabled": false,
-    "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
-
-    // APC Settings
-    "apc.activityBar": {
-        "position": "bottom",
-        "size": 28
-    },
-    // make activity bar to the bottom same as the status bar
-    "apc.statusBar": {
-        "position": "editor-bottom",
-        "height": 28,
-        "fontSize": 12
-    },
-    // Make window transparent
-    // "apc.electron": {
-    //   "frame": false,
-    //   "titleBarStyle": "hiddenInset",
-    //   "transparent": true,
-    //   "vibrancy": "ultra-dark",
-    //   "opacity": 0.98,
-    //   "visualEffectState": "active",
-    // },
-
-    // apply the font family to the editor
-    "apc.font.family": "JetBrainsMono Nerd Font, Fira Code, Consolas, 'Courier New', monospace",
-    "apc.monospace.font.family": "Geist Mono",
-
-    // formatter Prettier
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.tabWidth": 4,
-
-    "whichkey.sortOrder": "alphabetically",
-    "whichkey.delay": 0,
-    "whichkey.bindings": [
+    {
+      "key": "f",
+      "name": "Find & Replace...",
+      "type": "bindings",
+      "bindings": [
         {
-            "key": "w",
-            "name": "Save file",
-            "type": "command",
-            "command": "workbench.action.files.save"
+          "key": "f",
+          "name": "File",
+          "type": "command",
+          "command": "editor.action.startFindReplaceAction"
         },
         {
-            "key": "q",
-            "name": "Close file",
-            "type": "command",
-            "command": "workbench.action.closeActiveEditor"
+          "key": "p",
+          "name": "Project",
+          "type": "command",
+          "command": "workbench.action.replaceInFiles"
         },
         {
-            "key": ";",
-            "name": "commands",
-            "type": "command",
-            "command": "workbench.action.showCommands"
-        },
-        {
-            "key": "e",
-            "name": "Activity Bar",
-            "type": "command",
-            "bindings": [
-                {
-                    "key": "e",
-                    "name": "Explorer",
-                    "type": "command",
-                    "command": "workbench.view.explorer"
-                },
-                {
-                    "key": "f",
-                    "name": "Search",
-                    "type": "command",
-                    "command": "workbench.view.search"
-                },
-                {
-                    "key": "x",
-                    "name": "Extensions",
-                    "type": "command",
-                    "command": "workbench.view.extensions"
-                },
-                {
-                    "key": "s",
-                    "name": "Toggle sidebar visibility",
-                    "type": "command",
-                    "command": "workbench.action.toggleSidebarVisibility"
-                },
-                {
-                    "key": "c",
-                    "name": "Collapse folders in Explorer",
-                    "type": "command",
-                    "command": "workbench.files.action.collapseExplorerFolders"
-                }
-            ]
-        },
-        {
-            "key": "f",
-            "name": "Find & Replace...",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "f",
-                    "name": "File",
-                    "type": "command",
-                    "command": "editor.action.startFindReplaceAction"
-                },
-                {
-                    "key": "p",
-                    "name": "Project",
-                    "type": "command",
-                    "command": "workbench.action.replaceInFiles"
-                },
-                {
-                    "key": "s",
-                    "name": "Find and open a file",
-                    "type": "command",
-                    "command": "workbench.action.quickOpen"
-                }
-            ]
-        },
-        {
-            "key": "F",
-            "name": "Format Document",
-            "type": "command",
-            "command": "editor.action.formatDocument"
-        },
-        {
-            "key": "n",
-            "name": "Next Editor",
-            "type": "command",
-            "command": "workbench.action.nextEditor"
-        },
-        {
-            "key": "m",
-            "name": "Minimap",
-            "type": "command",
-            "command": "editor.action.toggleMinimap"
-        },
-        {
-            "key": "o",
-            "name": "Open...",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "d",
-                    "name": "Directory",
-                    "type": "command",
-                    "command": "workbench.action.files.openFolder"
-                },
-                {
-                    "key": "r",
-                    "name": "Recent",
-                    "type": "command",
-                    "command": "workbench.action.openRecent"
-                },
-                {
-                    "key": "f",
-                    "name": "File",
-                    "type": "command",
-                    "command": "workbench.action.files.openFile"
-                }
-            ]
-        },
-        {
-            "key": "t",
-            "name": "Terminal...",
-            "type": "bindings",
-            "bindings": [
-                {
-                    "key": "t",
-                    "name": "Toggle Terminal",
-                    "type": "command",
-                    "command": "workbench.action.togglePanel"
-                },
-                {
-                    "key": "f",
-                    "name": "Focus Terminal",
-                    "type": "command",
-                    "command": "workbench.action.terminal.toggleTerminal",
-                    "when": "!terminalFocus"
-                }
-            ]
-        },
-        {
-            "key": "v",
-            "name": "Split Vertical",
-            "type": "command",
-            "command": "workbench.action.splitEditor"
+          "key": "s",
+          "name": "Find and open a file",
+          "type": "command",
+          "command": "workbench.action.quickOpen"
         }
-    ],
-    "whichkey.bindingOverrides": [],
-    "whichkey.transient": {
-        "error": {
-            "title": "Error transient",
-            "bindings": [
-                {
-                    "key": "N",
-                    "name": "Previous error",
-                    "command": "editor.action.marker.prev"
-                },
-                {
-                    "key": "n",
-                    "name": "Next error",
-                    "command": "editor.action.marker.next"
-                },
-                {
-                    "key": "p",
-                    "name": "Previous error",
-                    "command": "editor.action.marker.prev"
-                }
-            ]
+      ]
+    },
+    {
+      "key": "F",
+      "name": "Format Document",
+      "type": "command",
+      "command": "editor.action.formatDocument"
+    },
+    {
+      "key": "n",
+      "name": "Next Editor",
+      "type": "command",
+      "command": "workbench.action.nextEditor"
+    },
+    {
+      "key": "m",
+      "name": "Minimap",
+      "type": "command",
+      "command": "editor.action.toggleMinimap"
+    },
+    {
+      "key": "o",
+      "name": "Open...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "Directory",
+          "type": "command",
+          "command": "workbench.action.files.openFolder"
         },
-        "symbol": {
-            "title": "Highlight symbol transient",
-            "bindings": [
-                {
-                    "key": "p",
-                    "name": "Previous occurrence",
-                    "command": "editor.action.wordHighlight.prev"
-                },
-                {
-                    "key": "N",
-                    "name": "Previous occurrence",
-                    "command": "editor.action.wordHighlight.prev"
-                },
-                {
-                    "key": "n",
-                    "name": "Next occurrence",
-                    "command": "editor.action.wordHighlight.next"
-                },
-                {
-                    "key": "/",
-                    "name": "Search in a project with a selection",
-                    "commands": [
-                        "editor.action.addSelectionToNextFindMatch",
-                        "workbench.action.findInFiles"
-                    ]
-                }
-            ]
+        {
+          "key": "r",
+          "name": "Recent",
+          "type": "command",
+          "command": "workbench.action.openRecent"
         },
-        "lineMoving": {
-            "title": "Line moving transient",
-            "bindings": [
-                {
-                    "key": "J",
-                    "name": "Move lines down",
-                    "command": "editor.action.moveLinesDownAction"
-                },
-                {
-                    "key": "K",
-                    "name": "Move lines up",
-                    "command": "editor.action.moveLinesUpAction"
-                }
-            ]
-        },
-        "frameZooming": {
-            "title": "Frame zooming transient",
-            "bindings": [
-                {
-                    "key": "=",
-                    "name": "Zoom in",
-                    "command": "workbench.action.zoomIn"
-                },
-                {
-                    "key": "+",
-                    "name": "Zoom in",
-                    "command": "workbench.action.zoomIn"
-                },
-                {
-                    "key": "-",
-                    "name": "Zoom out",
-                    "command": "workbench.action.zoomOut"
-                },
-                {
-                    "key": "0",
-                    "name": "Reset zoom",
-                    "command": "workbench.action.zoomReset"
-                }
-            ]
-        },
-        "fontZooming": {
-            "title": "Front zooming transient",
-            "bindings": [
-                {
-                    "key": "=",
-                    "name": "Zoom in",
-                    "command": "editor.action.fontZoomIn"
-                },
-                {
-                    "key": "+",
-                    "name": "Zoom in",
-                    "command": "editor.action.fontZoomIn"
-                },
-                {
-                    "key": "-",
-                    "name": "Zoom out",
-                    "command": "editor.action.fontZoomOut"
-                },
-                {
-                    "key": "0",
-                    "name": "Reset zoom",
-                    "command": "editor.action.fontZoomReset"
-                }
-            ]
-        },
-        "imageZooming": {
-            "title": "Image zooming transient",
-            "bindings": [
-                {
-                    "key": "=",
-                    "name": "Zoom in",
-                    "command": "imagePreview.zoomIn"
-                },
-                {
-                    "key": "+",
-                    "name": "Zoom in",
-                    "command": "imagePreview.zoomIn"
-                },
-                {
-                    "key": "-",
-                    "name": "Zoom out",
-                    "command": "imagePreview.zoomOut"
-                }
-            ]
-        },
-        "smartExpand": {
-            "title": "Smart expand transient",
-            "bindings": [
-                {
-                    "key": "v",
-                    "name": "Grow selection",
-                    "command": "editor.action.smartSelect.grow"
-                },
-                {
-                    "key": "V",
-                    "name": "Shrink selection",
-                    "command": "editor.action.smartSelect.shrink"
-                }
-            ]
+        {
+          "key": "f",
+          "name": "File",
+          "type": "command",
+          "command": "workbench.action.files.openFile"
         }
+      ]
     },
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+    {
+      "key": "t",
+      "name": "Terminal...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "t",
+          "name": "Toggle Terminal",
+          "type": "command",
+          "command": "workbench.action.togglePanel"
+        },
+        {
+          "key": "f",
+          "name": "Focus Terminal",
+          "type": "command",
+          "command": "workbench.action.terminal.toggleTerminal",
+          "when": "!terminalFocus"
+        }
+      ]
     },
-    "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    {
+      "key": "v",
+      "name": "Split Vertical",
+      "type": "command",
+      "command": "workbench.action.splitEditor"
+    }
+  ],
+  "whichkey.bindingOverrides": [],
+  "whichkey.transient": {
+    "error": {
+      "title": "Error transient",
+      "bindings": [
+        {
+          "key": "N",
+          "name": "Previous error",
+          "command": "editor.action.marker.prev"
+        },
+        {
+          "key": "n",
+          "name": "Next error",
+          "command": "editor.action.marker.next"
+        },
+        {
+          "key": "p",
+          "name": "Previous error",
+          "command": "editor.action.marker.prev"
+        }
+      ]
     },
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
+    "symbol": {
+      "title": "Highlight symbol transient",
+      "bindings": [
+        {
+          "key": "p",
+          "name": "Previous occurrence",
+          "command": "editor.action.wordHighlight.prev"
+        },
+        {
+          "key": "N",
+          "name": "Previous occurrence",
+          "command": "editor.action.wordHighlight.prev"
+        },
+        {
+          "key": "n",
+          "name": "Next occurrence",
+          "command": "editor.action.wordHighlight.next"
+        },
+        {
+          "key": "/",
+          "name": "Search in a project with a selection",
+          "commands": [
+            "editor.action.addSelectionToNextFindMatch",
+            "workbench.action.findInFiles"
+          ]
+        }
+      ]
     },
-    "codesnap.transparentBackground": true,
-    "prisma.showPrismaDataPlatformNotification": false,
-    "github.copilot.editor.enableAutoCompletions": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "lineMoving": {
+      "title": "Line moving transient",
+      "bindings": [
+        {
+          "key": "J",
+          "name": "Move lines down",
+          "command": "editor.action.moveLinesDownAction"
+        },
+        {
+          "key": "K",
+          "name": "Move lines up",
+          "command": "editor.action.moveLinesUpAction"
+        }
+      ]
     },
-    "explorer.compactFolders": false,
-    "[lua]": {
-        "editor.defaultFormatter": "sumneko.lua"
+    "frameZooming": {
+      "title": "Frame zooming transient",
+      "bindings": [
+        {
+          "key": "=",
+          "name": "Zoom in",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "key": "+",
+          "name": "Zoom in",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "key": "-",
+          "name": "Zoom out",
+          "command": "workbench.action.zoomOut"
+        },
+        {
+          "key": "0",
+          "name": "Reset zoom",
+          "command": "workbench.action.zoomReset"
+        }
+      ]
     },
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
+    "fontZooming": {
+      "title": "Front zooming transient",
+      "bindings": [
+        {
+          "key": "=",
+          "name": "Zoom in",
+          "command": "editor.action.fontZoomIn"
+        },
+        {
+          "key": "+",
+          "name": "Zoom in",
+          "command": "editor.action.fontZoomIn"
+        },
+        {
+          "key": "-",
+          "name": "Zoom out",
+          "command": "editor.action.fontZoomOut"
+        },
+        {
+          "key": "0",
+          "name": "Reset zoom",
+          "command": "editor.action.fontZoomReset"
+        }
+      ]
     },
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "window.menuBarVisibility": "toggle",
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
+    "imageZooming": {
+      "title": "Image zooming transient",
+      "bindings": [
+        {
+          "key": "=",
+          "name": "Zoom in",
+          "command": "imagePreview.zoomIn"
+        },
+        {
+          "key": "+",
+          "name": "Zoom in",
+          "command": "imagePreview.zoomIn"
+        },
+        {
+          "key": "-",
+          "name": "Zoom out",
+          "command": "imagePreview.zoomOut"
+        }
+      ]
     },
-    "[properties]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
-    "update.mode": "manual",
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "smartExpand": {
+      "title": "Smart expand transient",
+      "bindings": [
+        {
+          "key": "v",
+          "name": "Grow selection",
+          "command": "editor.action.smartSelect.grow"
+        },
+        {
+          "key": "V",
+          "name": "Shrink selection",
+          "command": "editor.action.smartSelect.shrink"
+        }
+      ]
+    }
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "codesnap.transparentBackground": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.compactFolders": false,
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "window.menuBarVisibility": "toggle",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "update.mode": "manual",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
+

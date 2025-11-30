@@ -56,12 +56,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Alias
 alias ls='ls --color=auto'
+alias mc='mcli'
 alias grep='grep --color=auto'
 alias f='yazi'
 alias fetch='fastfetch'
 alias monitor_mode="$HOME/.config/scripts/monitor_mode.sh"
 alias syncdot="$HOME/.config/scripts/syncdot.sh"
 alias getCurrentWallpaper="$HOME/.config/scripts/get_current_wallpaper.sh"
+alias salesquake="$HOME/.config/scripts/salesquake.sh"
 
 # Execute when terminal open
 eval "$(fzf --zsh)"
@@ -71,3 +73,7 @@ eval $(thefuck --alias)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Optional: Loads bash_completion
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/yato/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

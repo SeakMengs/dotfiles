@@ -19,6 +19,22 @@ return {
           },
         },
       },
+      diagnostics = {
+        virtual_text = {
+          severity = { min = vim.diagnostic.severity.ERROR }, -- inline only errors
+        },
+        underline = {
+          severity = { min = vim.diagnostic.severity.WARN }, -- underline warn+
+        },
+        signs = {
+          severity = { min = vim.diagnostic.severity.WARN }, -- gutter signs warn+
+        },
+        float = {
+          border = "rounded",
+          source = "if_many",
+        },
+        severity_sort = true,
+      },
     },
   },
 }
