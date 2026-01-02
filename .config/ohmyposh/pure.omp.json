@@ -14,19 +14,19 @@
       "alignment": "left",
       "segments": [
         {
-          "style": "plain",
           "template": "{{ .UserName }} ",
           "foreground": "#BF616A",
-          "type": "session"
+          "type": "session",
+          "style": "plain"
         },
         {
-          "properties": {
+          "options": {
             "style": "full"
           },
-          "style": "plain",
           "template": "{{ .Path }} ",
           "foreground": "#81A1C1",
-          "type": "path"
+          "type": "path",
+          "style": "plain"
         }
       ]
     },
@@ -35,7 +35,7 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
+          "options": {
             "branch_ahead_icon": "<#88C0D0>\u21e1 </>",
             "branch_behind_icon": "<#88C0D0>\u21e3 </>",
             "branch_icon": "",
@@ -44,10 +44,10 @@
             "fetch_upstream_icon": true,
             "github_icon": ""
           },
-          "style": "plain",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#FFAFD7>*</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "foreground": "#6C6C6C",
-          "type": "git"
+          "type": "git",
+          "style": "plain"
         }
       ]
     },
@@ -56,13 +56,13 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
+          "options": {
             "style": "austin"
           },
-          "style": "plain",
           "template": " {{ .FormattedMs }} ",
           "foreground": "#A3BE8C",
-          "type": "executiontime"
+          "type": "executiontime",
+          "style": "plain"
         }
       ]
     },
@@ -71,13 +71,13 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
+          "options": {
             "always_enabled": true
           },
-          "style": "plain",
           "template": "❯ ",
           "foreground": "#B48EAD",
           "type": "status",
+          "style": "plain",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#BF616A{{ end }}"
           ]
@@ -86,5 +86,5 @@
       "newline": true
     }
   ],
-  "version": 3
+  "version": 4
 }
