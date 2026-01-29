@@ -76,12 +76,13 @@
 /* =============================== */
 /* Universal Styling */
 * {
-  border: none;
-  border-radius: 0;
-  font-family: "JetbrainsMono Nerd Font", "CaskaydiaCove Nerd Font",
-    "Font Awesome 6 Free", "monospace";
-  font-size: 13px;
-  min-height: 0;
+    border: none;
+    border-radius: 0;
+    font-family:
+        "JetBrainsMono Nerd Font", "CaskaydiaCove Nerd Font",
+        "Symbols Nerd Font", "Font Awesome 6 Free", "monospace";
+    font-size: 13px;
+    min-height: 0;
 }
 
 /* =============================== */
@@ -89,15 +90,15 @@
 /* =============================== */
 /* Bar Styling */
 #waybar {
-  background: transparent;
-  color: @text;
+    background: transparent;
+    color: @text;
 }
 
 #waybar > box {
-  /* If prefer auto color from wallpaper instead of blur from hyprland, uncomment this*/
-  /* background-color: @surface0; */
-  color: @text;
-  box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    /* If prefer auto color from wallpaper instead of blur from hyprland, uncomment this*/
+    /* background-color: @surface0; */
+    color: @text;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
 }
 
 /* =============================== */
@@ -123,8 +124,8 @@
 #custom-notification,
 #custom-separator-line,
 #custom-power {
-  color: @text;
-  padding: 0.1rem 0.5rem;
+    color: @text;
+    padding: 0.1rem 0.5rem;
 }
 
 /* =============================== */
@@ -132,13 +133,13 @@
 }
 
 #workspaces button {
-  background: none;
-  margin-bottom: 0.4rem;
+    background: none;
+    margin-bottom: 0.4rem;
 }
 
 #workspaces button.active,
 #workspaces button:hover {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* =============================== */
@@ -148,7 +149,7 @@
 #cpu,
 #memory,
 #temperature {
-  color: @blue;
+    color: @blue;
 }
 
 #cpu {
@@ -161,7 +162,7 @@
 }
 
 #disk {
-  color: @peach;
+    color: @peach;
 }
 
 /* =============================== */
@@ -169,7 +170,7 @@
 /* =============================== */
 /* Clock Module */
 #clock {
-  color: @flamingo;
+    color: @flamingo;
 }
 
 /* =============================== */
@@ -263,7 +264,7 @@
 /* =============================== */
 /* Music/PlayerCTL Module */
 #custom-music {
-  color: @mauve;
+    color: @mauve;
 }
 
 /* =============================== */
@@ -271,15 +272,15 @@
 /* =============================== */
 /* Network Module */
 #network {
-  color: @blue;
+    color: @blue;
 }
 
 #power-profiles-daemon {
-  color: @mauve;
+    color: @mauve;
 }
 
 #bluetooth {
-  color: @blue;
+    color: @blue;
 }
 
 /* =============================== */
@@ -287,7 +288,7 @@
 /* =============================== */
 /* PulseAudio Module */
 #pulseaudio {
-  color: @mauve;
+    color: @mauve;
 }
 
 /* =============================== */
@@ -295,55 +296,55 @@
 /* =============================== */
 /* Battery Module */
 #battery {
-  color: @mauve;
+    color: @mauve;
 }
 
 #battery.charging {
-  /* color: @green; */
-  color: @mauve;
+    /* color: @green; */
+    color: @mauve;
 }
 
 #battery.warning:not(.charging) {
-  color: @maroon;
+    color: @maroon;
 }
 
 #battery.critical:not(.charging) {
-  color: @red;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+    color: @red;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes blink {
-  to {
-    background: @red;
-    color: @surface1;
-  }
+    to {
+        background: @red;
+        color: @surface1;
+    }
 }
 
 /* Tray Module */
 #tray {
-  color: @mauve;
+    color: @mauve;
 }
 
 /* Powermenu Module */
 #custom-power {
-  color: @mauve;
-  margin-right: 1rem;
+    color: @mauve;
+    margin-right: 1rem;
 }
 
 /* =============================== */
 /* Launcher Module */
 #custom-launcher {
-  color: @blue;
-  font-size: 18px;
-  margin-left: 1rem;
+    color: @blue;
+    font-size: 18px;
+    margin-left: 1rem;
 }
 
 /* =============================== */
 
 #custom-notification {
-  color: @mauve;
+    color: @mauve;
 }
