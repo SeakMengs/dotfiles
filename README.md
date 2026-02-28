@@ -6,29 +6,30 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Post Installation](#post-installation)
-  - [Zsh](#zsh)
-  - [Give Permission to scripts](#give-permission-to-scripts)
-  - [Enable hypridle](#enable-hypridle)
-  - [Plugins](#plugins)
+    - [Zsh](#zsh)
+    - [Give Permission to scripts](#give-permission-to-scripts)
+    - [Enable hypridle](#enable-hypridle)
+    - [Plugins](#plugins)
 - [Programs](#programs)
+- [Layout](#layout)
 - [Keybindings](#keybindings)
-  - [Screenshot Keybinds](#screenshot-keybinds)
-  - [General Keybinds](#general-keybinds)
-  - [Workspace Navigation](#workspace-navigation)
-    - [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
-    - [Switch Workspaces](#switch-workspaces)
-    - [Move Active Window to Workspace](#move-active-window-to-workspace)
-    - [Special Workspace](#special-workspace)
-    - [Workspace Scroll](#workspace-scroll)
-    - [Grid View Workspace](#grid-view-workspace)
-  - [Window Management](#window-management)
-    - [Move & Swap Windows](#move-swap-windows)
-    - [Resize Windows](#resize-windows)
-  - [Audio Controls](#audio-controls)
-  - [Brightness Controls](#brightness-controls)
-  - [Global Keybinds](#global-keybinds)
-    - [OBS](#obs)
-    - [Discord](#discord)
+    - [Screenshot Keybinds](#screenshot-keybinds)
+    - [General Keybinds](#general-keybinds)
+    - [Workspace Navigation](#workspace-navigation)
+        - [Move Focus with Arrow Keys](#move-focus-with-arrow-keys)
+        - [Switch Workspaces](#switch-workspaces)
+        - [Move Active Window to Workspace](#move-active-window-to-workspace)
+        - [Special Workspace](#special-workspace)
+        - [Workspace Scroll](#workspace-scroll)
+        - [Grid View Workspace](#grid-view-workspace)
+    - [Window Management](#window-management)
+        - [Move & Swap Windows](#move-swap-windows)
+        - [Resize Windows](#resize-windows)
+    - [Audio Controls](#audio-controls)
+    - [Brightness Controls](#brightness-controls)
+    - [Global Keybinds](#global-keybinds)
+        - [OBS](#obs)
+        - [Discord](#discord)
 - [Inspiration and Credits](#inspiration-and-credits)
 
 # Introduction
@@ -48,18 +49,18 @@ The dotfiles are managed using `GNU Stow`, there is a scripts in the `.config/sc
 
 # Requirements
 
-Ensure you have the following installed on your system (Not necessary mean u need those, these are for me to copy paste if i ever need to fresh install my system)
+Ensure you have the following installed on your system. (Note: This list is for personal reference during fresh installs and may not all be required for your setup.)
 
 ```
-sudo pacman -S git hyprland kitty dolphin thunar waybar stow nvim hyprpaper zsh fastfetch snapper \
+sudo pacman -S git hyprland kitty dolphin thunar waybar stow nvim zsh fastfetch snapper \
 btrfs-assistant pipewire pipewire-alsa alsa-utils pipewire-pulse pavucontrol sof-firmware \
-ttf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
+otf-font-awesome ttf-liberation ttf-cascadia-code-nerd ttf-firacode-nerd ttf-jetbrains-mono-nerd \
 gwenview bluez bluez-utils blueman swaync okular qt5ct qt6ct kvantum arc-gtk cliphist \
-dunst lazygit wine wine-mono wine-gecko nwg-look nwg-displays filelight ark
+dunst lazygit nwg-look nwg-displays filelight ark rofi hyprlock hypridle nwg-displays \
 ```
 
 ```
-yay -S system76-power pywal-16-colors hyprpicker papirus-folders-git grimblast-git smile python-pywalfox winegui bibata-cursor-theme-bin
+yay -S system76-power python-pywal16 hyprpicker papirus-folders-git grimblast-git smile python-pywalfox bibata-cursor-theme-bin hyprquickframe-git swww wlogout
 ```
 
 # Installation
@@ -119,7 +120,7 @@ Install and enable Hyprland plugins:
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm update
 hyprpm enable hyprexpo
-hyprpm reload -nn
+hyprpm reload
 ```
 
 # Programs
@@ -134,6 +135,12 @@ hyprpm reload -nn
 - **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
 - **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
 - **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
+- **Emoji Picker**: [Smile](https://github.com/mijorus/smile)
+- **Screenshot Tool**: [HyprQuickFrame](https://github.com/Ronin-CK/HyprQuickFrame)
+
+# Layout
+
+The default layout is `scrolling`. To switch to `dwindle` layout, comment out or modify `general { layout = scrolling }` in `.config/hypr/hyprland.conf`.
 
 # Keybindings
 
@@ -143,8 +150,19 @@ The main modifier key is set to `SUPER` (Windows key).
 
 | Keybind         | Action                                                                         |
 | --------------- | ------------------------------------------------------------------------------ |
-| `SUPER+SHIFT+S` | Take a screenshot of a region and save it to `~/Pictures/Screenshots/`         |
+| `SUPER+SHIFT+S` | Open HyprQuickFrame screenshot menu (see sub-actions below)                    |
 | `Print`         | Take a screenshot of the whole screen and save it to `~/Pictures/Screenshots/` |
+
+### SUPER+SHIFT+S → HyprQuickFrame Shortcuts
+
+| Key      | Action              |
+| -------- | ------------------- |
+| `r`      | Region Mode         |
+| `w`      | Window Mode         |
+| `s`      | Full Screen Capture |
+| `t`      | Toggle Temp Mode    |
+| `k`      | Toggle KDE Share    |
+| `Escape` | Quit                |
 
 ## General Keybinds
 
@@ -159,7 +177,7 @@ The main modifier key is set to `SUPER` (Windows key).
 | `SUPER+Space` | Open Rofi application launcher                     |
 | `SUPER+F`     | Toggle fullscreen for the active window            |
 | `SUPER+P`     | Toggle pseudo mode                                 |
-| `SUPER+J`     | Toggle split layout                                |
+| `SUPER+J`     | Toggle split layout (Dwindle layout)               |
 | `SUPER+W`     | Open rofi menu to select wallpapers                |
 | `SUPER+.`     | Open emoji picker (`Smile`)                        |
 | `SUPER+F4`    | Open logout menu (`wlogout`)                       |
