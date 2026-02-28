@@ -150,10 +150,10 @@ The main modifier key is set to `SUPER` (Windows key).
 
 | Keybind         | Action                                                                         |
 | --------------- | ------------------------------------------------------------------------------ |
-| `SUPER+SHIFT+S` | Open HyprQuickFrame screenshot menu (see sub-actions below)                    |
+| `SUPER+SHIFT+S` | Open `HyprQuickFrame` screenshot menu ([see sub-actions below](#hyprquickframe-shortcuts))                    |
 | `Print`         | Take a screenshot of the whole screen and save it to `~/Pictures/Screenshots/` |
 
-### SUPER+SHIFT+S → HyprQuickFrame Shortcuts
+### HyprQuickFrame Shortcuts
 
 | Key      | Action              |
 | -------- | ------------------- |
