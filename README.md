@@ -60,7 +60,7 @@ dunst lazygit nwg-look nwg-displays filelight ark rofi hyprlock hypridle nwg-dis
 ```
 
 ```
-yay -S system76-power python-pywal16 hyprpicker papirus-folders-git grimblast-git smile python-pywalfox bibata-cursor-theme-bin hyprquickframe-git swww wlogout
+yay -S system76-power python-pywal16 hyprpicker papirus-folders-git grimblast-git smile python-pywalfox bibata-cursor-theme-bin hyprquickframe-git awww wlogout
 ```
 
 # Installation
@@ -133,7 +133,7 @@ hyprpm reload
 - **Notification Daemon**: [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
 - **Lockscreen**: [Hyprlock](https://github.com/hyprwm/hyprlock)
 - **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout)
-- **Wallpaper Setter**: [Swww](https://github.com/LGFae/swww)
+- **Wallpaper Setter**: [Awww](https://codeberg.org/LGFae/awww)
 - **Clipboard Manager**: [Cliphist](https://github.com/sentriz/cliphist)
 - **Emoji Picker**: [Smile](https://github.com/mijorus/smile)
 - **Screenshot Tool**: [HyprQuickFrame](https://github.com/Ronin-CK/HyprQuickFrame)

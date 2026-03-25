@@ -11,7 +11,7 @@ FPS=60
 TYPE="any"
 DURATION=3
 BEZIER="0.4,0.2,0.4,1.0"
-SWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
+AWWW_PARAMS="--transition-fps ${FPS} --transition-type ${TYPE} --transition-duration ${DURATION} --transition-bezier ${BEZIER}"
 
 # Check if swaybg is running
 if pidof swaybg >/dev/null; then
@@ -32,19 +32,19 @@ rofiCommand="rofi -show -dmenu -theme ${rofiTheme}"
 # Execute command according the wallpaper manager
 executeCommand() {
 
-  if command -v swww &>/dev/null; then
-    echo "Wallpaper set to: $1" . $SWWW_PARAMS
-    swww img "$1" ${SWWW_PARAMS}
+  if command -v awww &>/dev/null; then
+    echo "Wallpaper set to: $1" . $AWWW_PARAMS
+    awww img "$1" ${AWWW_PARAMS}
   elif command -v swaybg &>/dev/null; then
     swaybg -i "$1" &
   else
-    echo "Neither swww nor swaybg are installed."
+    echo "Neither awww nor swaybg are installed."
     exit 1
   fi
 
   ln -sf "$1" "$HOME/.current_wallpaper"
 
-  # Sleep for swww to finish otherwise pywal will interrupt swww animation
+  # Sleep for awww to finish otherwise pywal will interrupt awww animation
   sleep ${DURATION}
 
   # update pywal, waybar, swaync
@@ -84,9 +84,9 @@ menu() {
   done
 }
 
-# If swww exists, start it
-if command -v swww &>/dev/null; then
-  swww query || swww init
+# If awww exists, start it
+if command -v awww &>/dev/null; then
+  awww query || awww init
 fi
 
 # Execution
