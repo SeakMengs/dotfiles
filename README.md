@@ -117,9 +117,9 @@ systemctl --user enable --now hypridle.service
 Install and enable Hyprland plugins:
 
 ```
-hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm add https://github.com/sandwichfarm/hyprexpo-plus
 hyprpm update
-hyprpm enable hyprexpo
+hyprpm enable hyprexpo-plus
 hyprpm reload
 ```
 
